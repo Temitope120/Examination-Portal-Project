@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("images/exam-portal-carousel-img-3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: mymoves 7s infinite;
+}
+@-webkit-keyframes mymoves {
+    from {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("images/exam-portal-carousel-img-3.jpg");
+    }
+    to {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("images/exam-portal-carousel-img-4.avif");
+    }
+}
+.header-text{
+    color: #F26722;
+    font-weight: 700;
+    font-size: 6rem;
+}
+.header-sub-text{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+nav ul li{
+    list-style: none;
+}
+.nav-link:hover{
+    background-color: #36315E !important;
+    border-radius: 30px;
+    font-weight: 700;
+}
+.nav-link{
+    font-weight: 600;
+}
+.nav-link.active:hover{
+    background-color: #36315E !important;
+    color: #F26722 !important;
+    border-radius: 30px;
+    font-weight: 700;
+}
+nav{
+    justify-content: space-between;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #F26722 !important;
+}
+nav ul li a.active{
+    text-decoration: none;
+    color: #36315E !important;
+ }
+.top-bar{
+    background-color: #fff;
+    height: 80px !important;
+    width: 100% !important;
+}
+.student-login{
+    color: #fff;
+    background-color: #36315E;
+    font-weight: 600;
+}
+.lecturer-login{
+    color: #fff;
+    background-color: #F26722;
+    font-weight: 600;
+}
+
+.lecturer-login:hover, .student-login:hover{
+    color: #fff;
+    background-color: #333;
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: all 1.5s ease-in-out;
+}
+#services > div:nth-child(odd){
+    background: #F26722;
+}
+
+#services > div:nth-child(even){
+    background: #36315E;
+}
+.high-light{
+    font-size: 1.5rem;
+}
+#services > div{
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}
+#products{
+    background-image: url(images/wallpaper-porduct.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.product-header{
+    color: #36315E !important;
+    font-weight: 700;
+    font-size: 4rem;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    color: #F26722;
+}
+footer p{
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: 700;
+
+}
