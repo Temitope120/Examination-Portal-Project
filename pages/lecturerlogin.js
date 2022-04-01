@@ -10,5 +10,4 @@ let display = document.querySelector('.toggle-menu')
      let password = document.querySelector("#password").value;
      const userInput ={matricNumber, password};
      sessionStorage.setItem(`${matricNumber},`, JSON.stringify(userInput));
-     alert(`you have been logged in`)
  })
