@@ -3,49 +3,49 @@
 
     const myQuestions = [
         {
-            question: "CSS stands for __________",
-             optionOne: "Cascade style sheets",
-             optionTwo: "Color and style sheets",
-             optionThree: "Cascading style sheets",
-             optionFour: "None of the above"
+            question: "JavaScript is a _________ language",
+             optionOne: " Object-Oriented",
+             optionTwo: "Object-based",
+             optionThree: "Assembly-language",
+             optionFour: "High Level"
         },
     
         {
-            question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-             optionOne: "writing-mode",
-             optionTwo: "text-indent",
-             optionThree: "word-break",
-             optionFour: "None of the above"
+            question: "In JavaScript, what is a block of statement?",
+             optionOne: "Conditional block",
+             optionTwo: "block that combines a number of statements into a single compound statement",
+             optionThree: "both conditional block and a single statement",
+             optionFour: "block that contains a single statement"
         },
     
        {
-        question: "The property in CSS used to change the background color of an element is______________",
-         optionOne: "in",
-         optionTwo: "about",
-         optionThree: "at",
-         optionFour: "for"
+        question: "The terms function and var are known as javaScript______________",
+         optionOne: "Keywords",
+         optionTwo: "Data Types",
+         optionThree: "Declaration Statement",
+         optionFour: "Prototypes"
         },
     
        {
-        question: "The property in CSS used to change the background color of an element is _________",
-         optionOne: "bgcolor",
-         optionTwo: "background-color",
-         optionThree: "color",
-         optionFour: "All of the above"
+        question: " Which of the following keywords is used to define a variable in Javascript?",
+         optionOne: "var",
+         optionTwo: "let",
+         optionThree: "Both A and B",
+         optionFour: "None of the above"
         },
     
         {
-            question: "Which of the following CSS property is used to set the background image of an element?",
-            optionOne: "background-attachment",
-            optionTwo: "background-image",
-            optionThree: "background-color",
+            question: "Which of the following methods is used to access HTML elements using Javascript?",
+            optionOne: "getElementbyId()",
+            optionTwo: "getElementByClassName()",
+            optionThree: "Both A and B",
             optionFour: "None of the above"
         },
     
         {
-            question: "The HTML attribute used to define the inline styles is __________ ",
-            optionOne: "Style",
-            optionTwo: "styles",
+            question: "Which of the following methods can be used to display data in some form using Javascript?",
+            optionOne: "document.write",
+            optionTwo: "console.log",
             optionThree: "class",
             optionFour: "None of the above"
         },

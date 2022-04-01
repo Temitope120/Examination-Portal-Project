@@ -190,15 +190,15 @@ function showResultBox(){
     resultBox.classList.add("activeResult") //show the result box
     const scoreText = resultBox.querySelector(".score-text")
     if(userScore > 3){
-        let scoreTag = `<span> and Contrats!!, <p>${userScore}</p>out of<p>${questions.length}</p></span>`
+        let scoreTag = `<span>Congratulations!!, You got <p>${userScore} Points </p>out of<p>${questions.length}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
    else if(userScore > 3){
-        let scoreTag = `<span>and Nice, you got only<p>${userScore}</p>out of<p>${questions.length}</p></span>`
+        let scoreTag = `<span>Nice, you got only<p>${userScore} Points </p>out of<p>${questions.length}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
     else{
-        let scoreTag = `<span>and sorry, you got only<p>${userScore}</p>out of<p>${questions.length}</p></span>`
+        let scoreTag = `<span>Unfortunately, you did not meet the pass mark. You got <p>${userScore} points </p>out of<p>${questions.length}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
 }
