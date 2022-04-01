@@ -7,7 +7,7 @@ body{
     overflow-x: hidden;
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("images/exam-portal-carousel-img-3.jpg");
     background-size: cover;
     background-position: center;
@@ -17,30 +17,29 @@ header {
 }
 @-webkit-keyframes mymoves {
     from {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("images/exam-portal-carousel-img-3.jpg");
     }
     to {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("images/exam-portal-carousel-img-4.avif");
     }
 }
 .header-text{
-    color: #F26722;
+    color: #fff;
     font-weight: 700;
     font-size: 6rem;
 }
 .header-sub-text{
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 500;
-    font-style: italic;
+    color: #fbfbf7;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
-nav ul li{
+nav li{
     list-style: none;
 }
 .nav-link:hover{
-    background-color: #36315E !important;
+    background-color: #fff !important;
     border-radius: 30px;
     font-weight: 700;
 }
@@ -48,7 +47,7 @@ nav ul li{
     font-weight: 600;
 }
 .nav-link.active:hover{
-    background-color: #36315E !important;
+    background-color: #fff !important;
     color: #F26722 !important;
     border-radius: 30px;
     font-weight: 700;
@@ -56,33 +55,37 @@ nav ul li{
 nav{
     justify-content: space-between;
 }
-nav ul li a{
+nav li a{
    text-decoration: none;
    color: #F26722 !important;
 }
-nav ul li a.active{
+nav li a.active{
     text-decoration: none;
-    color: #36315E !important;
- }
+    background-color: #fff !important;
+    color: #F26722 !important;
+    border-radius: 30px;
+    font-weight: 700;
+}
 .top-bar{
-    background-color: #fff;
+    background-color: #36315E;
     height: 80px !important;
     width: 100% !important;
 }
 .student-login{
-    color: #fff;
-    background-color: #36315E;
+    color: #f07a3f;
+    background-color: #fff;
     font-weight: 600;
 }
 .lecturer-login{
     color: #fff;
-    background-color: #F26722;
+    background-color: transparent;
+    border: .1px solid #F26722;
     font-weight: 600;
 }
 
 .lecturer-login:hover, .student-login:hover{
     color: #fff;
-    background-color: #333;
+    background-color: #F26722;
     font-weight: 600;
     transform: scale(1.1);
     transition: all 1.5s ease-in-out;
@@ -100,7 +103,9 @@ nav ul li a.active{
 #services > div{
     perspective: 1000px;
 }
-
+#toggle{
+    display: none;
+}
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -145,4 +150,73 @@ footer p{
     font-style: oblique;
     font-weight: 700;
 
+}
+
+@media screen and (max-width: 1024px){
+    .header-text{
+        font-size: 3rem;
+    }
+    .header-sub-text{
+        font-size: 2rem;
+    }
+    .btn-mini{
+        margin-left: -2rem !important;
+    }
+    header{
+        height: 80vh;
+    }
+    .high-light {
+        font-size: 16px;
+    }
+    .certification-img{
+        max-width: 78%;
+        height: auto;
+    }
+    .nav-link{
+        padding: .5rem;
+    }
+    .nav-link{
+        font-size: .75rem;
+    }
+    .mt-none-btn{
+        margin-top: 22px !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .mt-none{
+        margin-top: -34px !important;
+    }
+    .btn-p{
+        padding: .5rem !important;
+    }
+    .header-sub-text{
+        font-size: 1rem;
+        margin-top: 0px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .btn-p{
+        font-size: 12px;
+    }
+    .mt-none-btn{
+        margin-top: 22px !important;
+    }
+    .product-header{
+        font-size: 2rem;
+    }
+    .d-none-sm{
+        display: none;
+    }
+    #links{
+        display: none !important;
+    }
+    .show{
+        display: block;
+    }
+    .toggle{
+        display: block;
+    }
+    .high-light {
+        font-size: 10px;
+    }
 }

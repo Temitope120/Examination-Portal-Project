@@ -15,23 +15,28 @@
     <section>
         <header>
             <nav class="top-bar navbar d-flex row p-3">
-                <div class="col-8">
-                    <img src="images/sbsc-logo.jpg" alt="" class="navbar-brand" width="60px" height="60px">
+                <div class="col-8 col-md-6 col-sm-6 col-xxl-8">
+                    <img src="images/sbsc-logo-removebg-preview.png" alt="" class="navbar-brand" width="60px" height="60px">
                 </div>
-                <div class="col-4">
-                    <ul class="d-flex">
-                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#"  class="nav-link">Courses</a></li>
-                        <li class="nav-item"><a href="#"  class="nav-link">Lecturer Login</a></li>
-                        <li class="nav-item"><a href="#"  class="nav-link">Student Login</a></li>
-                      </ul>
+                <div class="col-4 col-md-6 col-sm-6 col-xxl-4">
+                    <ul class="d-flex" id="links">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="pages/courses/courses.html" class="nav-link">Courses</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Lecturer Login</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Student Login</a></li>
+                    </ul>
+
+                    <img src="images/toggle-menu-removebg-preview.png" alt="" class="ms-5" id="toggle" width="30px" height="30px">
                 </div>
+
+
             </nav>
             <div class="heading">
                 <div class="row mt-5">
                     <div class="col-2">   
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 col-md-8 col-sm-8 mt-5 mt-none">
                         <h1 class="pt-5 header-text text-center pb-2">Our Certification</h1>
                         <p class="header-sub-text text-center mt-4">
                             Automation of the examination process to facilitate good and timely decisions. 
@@ -44,13 +49,13 @@
                     <div class="col-4">
     
                     </div>
-                    <div class="col-8">
-                        <div class="row mt-5">
-                            <div class="col-8 d-flex">
-                                <button class="btn btn-lg student-login py-3 px-4 me-4 ms-5"> Student Login</button>
+                    <div class="col-8 col-md-8 col-sm-8">
+                        <div class="row mt-5 mt-none-btn">
+                            <div class="col-8 col-md-8 col-sm-8 d-flex">
+                                <button class="btn btn-lg student-login py-3 px-4 me-4 ms-5 btn-mini btn-p"> Student Login</button>
                             <!-- </div> -->
                             <!-- <div class="col-3 btn-lg"> -->
-                                <button class="btn lecturer-login btn-lg py-3 px-4"> Lecturer Login</button>
+                                <button class="btn lecturer-login btn-lg py-3 px-4 btn-p"> Lecturer Login</button>
                             </div>
                         </div>
     
@@ -63,13 +68,15 @@
 
 
     <section id="products" class="p-3">
+       <div class="col-12 col-md-12 col-sm-12">
         <h1 class="text-center p-3 text-white product-header"> Products and Services</h1>
+       </div>
 
         <div class="row mb-5">
             <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-8 col-md-8 col-sm-8">
                 <div class="row" id="services">
-                    <div class="flip-card col-4 pt-3">
+                    <div class="flip-card col-4 col-md-4 col-sm-4 pt-3">
                         <div class="flip-card-inner">
                           <div class="flip-card-front">
                             <img src="images/workflow-product-img-removebg-preview.png" alt="Icon" class="img-fluid">
@@ -83,20 +90,25 @@
                         </div>
                     </div>
                     
-                    <div class="flip-card col-4 pt-3">
+                    <div class="flip-card col-4 col-md-4 col-sm-4 pt-3">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="images/internet-banking-removebg-preview.png" class="img-fluid" alt="Icon">
                                 <h6 class="text-white text-center p-3 high-light">Internet Banking</h6>
                             </div>
                             <div class="flip-card-back">
-                              <p class="mt-5">
-                                  A system that provides an infrastructure for the set-up, performance and monitoring of a defined sequence of tasks, arranged as a workflow application.
-                              </p>
+                              <ul class="mt-5">
+                               <span>Easier bill payments.</span>  <br>
+                               <span>Simpler fund transfers.</span>  <br>
+                               <span>Better access to bank records.</span>  <br>
+                               <span>Improved visibility of account balances and transactions.</span>  <br>
+                               <span> Ability to sync your accounts with your apps.</span>  <br>
+                               <span>Use of mobile apps.</span>  <br>
+                              </ul>
                             </div>
                         </div>                        
                     </div>
-                    <div class="flip-card col-4 pt-3">
+                    <div class="flip-card col-4 col-md-4 col-sm-4 pt-3">
                         <img src="images/elearn-icon-removebg-preview.png" alt="Icon" class="img-fluid">
                         <h6 class="text-white text-center p-3 high-light">eLearn</h6>
                     </div>
@@ -104,20 +116,20 @@
                         <img src="images/cmms-removebg-preview.png" alt="Icon" class="img-fluid">
                         <h6 class="text-white text-center p-3 high-light">Computerized Maintenance Management System</h6>
                     </div>
-                    <div class="flip-card col-4 pt-3">
+                    <div class="flip-card col-4  col-md-4 col-sm-4 pt-3">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="images/med-certificate-removebg-preview.png" alt="Icon" class="img-fluid">
+                                <img src="images/med-certificate-removebg-preview.png" alt="Icon" class="img-fluid certification-img">
                                 <h6 class="text-white text-center pb-5 high-light">Medical Certificate Automation</h6>
                             </div>
 
                             <div class="flip-card-back">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur placeat nihil tempora ipsum commodi sint iure architecto? Ullam praesentium, harum quibusdam maiores fugiat fugit molestiae odio cum sed quis laboriosam.</p>
+                                <p>software can greatly improve patient communication and health outcomes. The ability to automate reminders to patients about.</p>
                             </div>
                           
                         </div>
                     </div>
-                    <div class="col-4 pt-3">
+                    <div class="col-4 col-md-4 col-sm-4 pt-3">
                         <img src="images/workflow-product-img-removebg-preview.png" alt="Icon" class="img-fluid">
                         <h6 class="text-white text-center p-3 high-light">Workflow Management System</h6>
                     </div>
@@ -129,7 +141,11 @@
     </section>
 
     <footer>
-        <p class="text-center p-3">&copy;Copyright 2022</p>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center p-3">&copy;Copyright 2022</p>
+            </div>
+        </div>
     </footer>
 
 
@@ -141,6 +157,6 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
-    <script src="maths.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
