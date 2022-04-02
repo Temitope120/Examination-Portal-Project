@@ -247,6 +247,9 @@ footer p{
     }
 }
 @media screen and (max-width: 480px){
+    .header-text {
+        font-size: 2.5rem;
+    }
     .btn-p{
         font-size: 12px;
     }
@@ -266,8 +269,8 @@ footer p{
         display: none;
     }
     #linkss li a.active, #linkss li a {
-        text-align: center;
-        font-size: 1rem;
+        text-align: justify;
+        font-size: .85rem;
         color: #fff !important;
         background: none !important;
     }
@@ -286,8 +289,11 @@ footer p{
         margin-top: 4px;
         animation: moveMenu 3s;
         animation-fill-mode: forwards;
-        transform: translateX(522px);
+        transform: translateX(298px);
         transition: all 3s ease-in-out;    
+    }
+    .top-bar{
+        width: 103%;
     }
 
     @keyframes moveMenu {
@@ -302,7 +308,7 @@ footer p{
     #toggle{
         display: block;
         margin-left: auto !important;
-        margin-right: 60px;
+        margin-right: 12px;
     }
     .high-light {
         font-size: 10px;
