@@ -69,7 +69,6 @@ nav li a.active{
 .top-bar{
     background-color: #36315E;
     height: 80px !important;
-    width: 100% !important;
 }
 .student-login{
     color: #f07a3f;
@@ -129,6 +128,9 @@ nav li a.active{
     color: white;
     transform: rotateY(180deg);
 }
+#linkss{
+    display: none;
+}
 #products{
     background-image: url(images/wallpaper-porduct.jpg);
     background-size: cover;
@@ -181,6 +183,9 @@ footer p{
     .mt-none-btn{
         margin-top: 22px !important;
     }
+    .mt-none{
+        margin-top: -65px !important;
+    }
 }
 @media screen and (max-width:768px) {
     .mt-none{
@@ -192,6 +197,42 @@ footer p{
     .header-sub-text{
         font-size: 1rem;
         margin-top: 0px !important;
+    }
+    #linkss{
+        display: none;
+        /* flex-direction: column; */
+
+    }
+    .show{
+        display: block !important;
+        background-color: #36315E;
+        color: #fff;
+        border-bottom-left-radius: 100%;
+        height:283px;
+        margin-top: 4px;
+        animation: moveMenu 3s;
+        animation-fill-mode: forwards;
+        transform: translateX(522px);
+        transition: all 3s ease-in-out;    
+    }
+
+    @keyframes moveMenu {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    #toggle{
+        display: block;
+    }
+    .d-none-sm{
+        display: none;
+    }
+    #myLinks{
+        display: none !important;
     }
 }
 @media screen and (max-width: 480px){
@@ -207,13 +248,35 @@ footer p{
     .d-none-sm{
         display: none;
     }
-    #links{
+    #myLinks{
         display: none !important;
+    }
+    #linkss{
+        display: none;
     }
     .show{
         display: block;
+        background-color: #36315E;
+        color: #fff;
+        border-bottom-left-radius: 100%;
+        height:283px;
+        margin-top: 4px;
+        animation: moveMenu 3s;
+        animation-fill-mode: forwards;
+        transform: translateX(522px);
+        transition: all 3s ease-in-out;    
     }
-    .toggle{
+
+    @keyframes moveMenu {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        
+    }
+    #toggle{
         display: block;
     }
     .high-light {
