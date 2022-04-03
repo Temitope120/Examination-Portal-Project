@@ -79,7 +79,7 @@ continueBtn.onclick = ()=>{
          clearInterval(counterLine)
         startTimerLine(widthValue)
         nextBtn.style.display ="none"
-        timeOff.textContent = 'TimeOff'
+        timeOff.textContent = 'Time Left'
         }
         else{
              clearInterval(counter)
