@@ -197,70 +197,65 @@ let questions = [
 
      ]
  },
+
  {
-  numb: 17,
-     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-     answer:  "B. writing-mode",
+  numb: 18,
+     question: "Which of the following is not a HTML5 tag?",
+     answer:  "C. track",
      options:[
-         "A. text-indent",
-         "B. writing-mode",
-         "C. word-break",
-         "D. None of the above"
+         "A. video",
+         "B. Slider",
+         "C. track",
+         "D. Source"
 
      ]
  },
  {
-  numb: 17,
-     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-     answer:  "B. writing-mode",
+  numb: 19,
+     question: "The CSS property used to make the text bold is _________ ",
+     answer:  "D. font-weight : bold",
      options:[
-         "A. text-indent",
-         "B. writing-mode",
-         "C. word-break",
-         "D. None of the above"
+         "A. weight: bold",
+         "B. font: bold",
+         "C. style: bold",
+         "D. font-weight : bold"
+        ] 
+ },
+ {
+  numb: 20,
+     question: "Which of the following elements in HTML5 defines video or movie content?",
+     answer:  "A. Video",
+     options:[
+         "A. Video",
+         "B. movie",
+         "C. audio",
+         "D. slider"
 
      ]
  },
  {
-  numb: 17,
-     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-     answer:  "B. writing-mode",
+  numb: 21,
+     question: "Which element is used for or styling HTML5 layout?",
+     answer:  "A. CSS",
      options:[
-         "A. text-indent",
-         "B. writing-mode",
-         "C. word-break",
-         "D. None of the above"
+         "A. CSS",
+         "B. jQuery",
+         "C. javaScript",
+         "D. PHP"
 
      ]
  },
  {
-  numb: 17,
-     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-     answer:  "B. writing-mode",
+  numb: 22,
+     question: "HTML is a subset of ___________",
+     answer:  "D. SGML",
      options:[
-         "A. text-indent",
-         "B. writing-mode",
-         "C. word-break",
-         "D. None of the above"
+         "A. XHTML",
+         "B. SGMT",
+         "C. SGME",
+         "D. SGML"
 
      ]
  },
- {
-  numb: 17,
-     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-     answer:  "B. writing-mode",
-     options:[
-         "A. text-indent",
-         "B. writing-mode",
-         "C. word-break",
-         "D. None of the above"
-
-     ]
- },
- 
-
-
-
-
 
 ];
