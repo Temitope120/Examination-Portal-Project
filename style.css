@@ -28,7 +28,7 @@ header {
 .header-text{
     color: #fff;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 .header-sub-text{
     color: #fbfbf7;
@@ -182,7 +182,7 @@ footer p{
         margin-top: 22px !important;
     }
     .mt-none{
-        margin-top: -65px !important;
+        margin-top: 12px !important;
     }
 }
 @media screen and (max-width:768px) {
