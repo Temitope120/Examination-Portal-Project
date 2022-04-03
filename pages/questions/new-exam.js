@@ -20,10 +20,10 @@
     
        {
         question: "The property in CSS used to change the background color of an element is______________",
-         optionOne: "in",
-         optionTwo: "about",
-         optionThree: "at",
-         optionFour: "for"
+         optionOne: "bgcolor",
+         optionTwo: "background-color",
+         optionThree: "text--decoration",
+         optionFour: "border"
         },
     
        {
@@ -83,10 +83,10 @@
         },
         {
             question: "Which of the following property is used as the shorthand property for the padding properties? ",
-             optionOne: "Indifferent",
-             optionTwo: "Defy",
-             optionThree: "Differ",
-             optionFour: "Postpone"
+             optionOne: "padding-right",
+             optionTwo: "padding",
+             optionThree: "<hr>",
+             optionFour: "word-break"
         },
         {
             question: "The CSS property used to make the text bold is _________ ",
