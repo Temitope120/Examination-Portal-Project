@@ -192,6 +192,10 @@ footer p{
     .mt-none{
         margin-top: -34px !important;
     }
+    .flip-card-back p, .flip-card-back ul span{
+        font-size: 8px;
+        text-overflow: ellipsis;
+    }
     .btn-p{
         padding: .5rem !important;
     }
@@ -267,6 +271,9 @@ footer p{
 @media screen and (max-width: 480px){
     .header-text {
         font-size: 2rem;
+    }
+    .flip-card-back p, .flip-card-back ul span{
+        font-size: 10px;
     }
     .btn-p{
         font-size: 12px;
