@@ -85,7 +85,7 @@
             question: "Which of the following property is used as the shorthand property for the padding properties? ",
              optionOne: "padding-right",
              optionTwo: "padding",
-             optionThree: "<hr>",
+             optionThree: "hr",
              optionFour: "word-break"
         },
         {
