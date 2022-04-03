@@ -162,7 +162,7 @@ body {
   bottom: 0px;
   left: 0px;
   height: 1px;
-  width: 50%;
+  width: 100%;
   background-color: rgb(255, 0, 0);
 }
 .quix-box section {
@@ -359,4 +359,7 @@ footer .next-btn:hover {
   border: none;
   padding: 0 20px;
   cursor: pointer;
+}
+@media (max-width: 425px){
+
 }
