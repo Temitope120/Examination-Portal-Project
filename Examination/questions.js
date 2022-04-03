@@ -88,19 +88,179 @@ let questions = [
          "D. None"
 
      ]
- }
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+ },
+ {
+  numb: 9,
+     question: "The property in CSS used to change the background color of an element is _________",
+     answer:  "B. background-color",
+     options:[
+         "A. bgcolor",
+         "B. background-color",
+         "C. color",
+         "D. All of the above"
 
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
+     ]
+ },
+
+ {
+  numb: 10,
+     question: "The HTML attribute used to define the inline styles is __________ ",
+     answer:  "A. Style",
+     options:[
+         "A. Style",
+         "B. Styles",
+         "C. class",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 11,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction is _________",
+     answer:  "A. writing-mode",
+     options:[
+         "A. writing-mode",
+         "B. text-indent",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 12,
+     question: "Which of the following is the correct syntax to make the background-color of all paragraph elements to yellow? ",
+     answer:  "A. p {background-color : yellow;}",
+     options:[
+         "A. p {background-color : yellow;}",
+         "B. p {background-color : #yellow;}",
+         "C. all {background-color : yellow;}",
+         "D.  all p {background-color : #yellow;}"
+
+     ]
+ },
+ {
+  numb: 13,
+     question: "Which of the following is the correct syntax to display the hyperlinks without any underline?",
+     answer:  "C. a {text-decoration : none;}",
+     options:[
+         "A. a {text-decoration : underline;}",
+         "B. a {decoration : no-underline;}",
+         "C. a {text-decoration : none;}",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 14,
+     question: "The CSS property used to make the text bold is _________ ",
+     answer:  "D. font-weight : bold",
+     options:[
+         "A. weight: bold",
+         "B. font: bold",
+         "C. style: bold",
+         "D. font-weight : bold"
+        ] 
+ },
+ {
+  numb: 15,
+     question: "Which of the following property is used as the shorthand property of margin properties?",
+     answer:  "C. margin",
+     options:[
+         "A. margin-left",
+         "B. margin-right",
+         "C. margin",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 16,
+     question: "Which of the following is used to specify the subscript of text using CSS?",
+     answer:  "A. vertical-align: sub",
+     options:[
+         "A. vertical-align: sub",
+         "B. vertical-align: super",
+         "C. vertical-align: subscript",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 17,
+     question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
+     answer:  "B. writing-mode",
+     options:[
+         "A. text-indent",
+         "B. writing-mode",
+         "C. word-break",
+         "D. None of the above"
+
+     ]
+ },
+ 
+
+
+
+
+
 ];

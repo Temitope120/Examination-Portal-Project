@@ -65,10 +65,12 @@ body {
 }
 .info-box .info-list .info {
   margin: 5px 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding: .5rem;
 }
 .info-box .info-list .info span {
   font-weight: 600;
+  font-size: 1.5rem;
   color: #007bff;
 }
 .info-box .buttons {

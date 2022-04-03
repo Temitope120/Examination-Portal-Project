@@ -81,7 +81,6 @@ nav li a.active{
     border: .1px solid #F26722;
     font-weight: 600;
 }
-
 .lecturer-login:hover, .student-login:hover{
     color: #fff;
     background-color: #F26722;
@@ -151,7 +150,6 @@ footer p{
     font-size: 1rem;
     font-style: oblique;
     font-weight: 700;
-
 }
 
 @media screen and (max-width: 1024px){
@@ -188,6 +186,9 @@ footer p{
     }
 }
 @media screen and (max-width:768px) {
+    .top-bar{
+        width: 101.5% !important;
+    }
     .mt-none{
         margin-top: -34px !important;
     }
@@ -201,13 +202,21 @@ footer p{
     #linkss{
         display: none;
     }
+    .display{
+        display: none !important;
+    }
+    #linkss li a.active{
+        text-decoration: underline;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
     #linkss li a.active, #linkss li a {
         text-align: center;
         font-size: 1rem;
         color: #fff !important;
         background: none !important;
     }
-    #linkss li a.active :hover, #linkss li a:hover {
+    #linkss li a.active:hover, #linkss li a:hover {
         background: transparent !important;
         border: 2px solid #fff !important;
         border-radius: 5px !important;
@@ -222,8 +231,8 @@ footer p{
         margin-top: 4px;
         animation: moveMenu 3s;
         animation-fill-mode: forwards;
-        transform: translateX(522px);
-        transition: all 3s ease-in-out;    
+        transform: translateX(527px);
+        transition: all 1.5s ease-in-out;    
     }
 
     @keyframes moveMenu {
@@ -245,16 +254,28 @@ footer p{
     #myLinks{
         display: none !important;
     }
+    .product-header{
+        font-size: 3rem;
+    }
+    .btn-mini-font{ 
+        font-size: 1rem;
+    }
+    .logo-mini{
+        margin-left: 20px;
+    }
 }
 @media screen and (max-width: 480px){
     .header-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .btn-p{
         font-size: 12px;
     }
     .mt-none-btn{
         margin-top: 22px !important;
+    }
+    .mt-none{
+        margin-top: -46px !important;
     }
     .product-header{
         font-size: 2rem;
@@ -289,11 +310,11 @@ footer p{
         margin-top: 4px;
         animation: moveMenu 3s;
         animation-fill-mode: forwards;
-        transform: translateX(298px);
+        transform: translateX(265px);
         transition: all 3s ease-in-out;    
     }
     .top-bar{
-        width: 103%;
+        width: 102.95% !important;
     }
 
     @keyframes moveMenu {
@@ -302,8 +323,7 @@ footer p{
         }
         100%{
             opacity: 1;
-        }
-        
+        }  
     }
     #toggle{
         display: block;
@@ -312,5 +332,25 @@ footer p{
     }
     .high-light {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .product-header {
+        font-size: 1.5rem;
+    }
+    .show{
+        transform: translateX(163px);
+        width: 140px;
+    }
+    .pl-none{
+        padding-left: 0px !important;
+    }
+    .pt-sm{
+        padding-top: 20px !important;
+    }
+    .high-light {
+        font-size: 7px;
+        padding-left: 0px !important;
     }
 }
