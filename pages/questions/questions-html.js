@@ -3,120 +3,43 @@
 
     const myQuestions = [
         {
-            question: "CSS stands for __________",
-             optionOne: "Cascade style sheets",
-             optionTwo: "Color and style sheets",
-             optionThree: "Cascading style sheets",
-             optionFour: "None of the above"
-        },
-    
-        {
-            question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-             optionOne: "writing-mode",
-             optionTwo: "text-indent",
-             optionThree: "word-break",
-             optionFour: "None of the above"
+            question: "What is HTML?",
+             optionOne: "HTML is the standard markup language mainly used to create web pages",
+             optionTwo: "HTML is the standard markup language mainly used to create web pages",
+             optionThree: "HTML consists of a set of elements that helps the browser how to view the content",
+             optionFour: "All of the above"
+        },    
+       {
+        question: "HTML is a subset of ___________",
+         optionOne: "SGMT",
+         optionTwo: "SGML",
+         optionThree: "SGME",
+         optionFour: "XHTML"
         },
     
        {
-        question: "The property in CSS used to change the background color of an element is______________",
-         optionOne: "in",
-         optionTwo: "about",
-         optionThree: "at",
-         optionFour: "for"
-        },
-    
-       {
-        question: "The property in CSS used to change the background color of an element is _________",
-         optionOne: "bgcolor",
-         optionTwo: "background-color",
-         optionThree: "color",
-         optionFour: "All of the above"
+        question: "Which element is used for or styling HTML5 layout?",
+         optionOne: "CSS",
+         optionTwo: "jQuery",
+         optionThree: "PHP",
+         optionFour: "javaScript"
         },
     
         {
-            question: "Which of the following CSS property is used to set the background image of an element?",
-            optionOne: "background-attachment",
-            optionTwo: "background-image",
-            optionThree: "background-color",
-            optionFour: "None of the above"
+            question: "Which of the following elements in HTML5 defines video or movie content?",
+            optionOne: "video",
+            optionTwo: "movie",
+            optionThree: "audio",
+            optionFour: "media"
         },
     
         {
-            question: "The HTML attribute used to define the inline styles is __________ ",
-            optionOne: "Style",
-            optionTwo: "styles",
-            optionThree: "class",
-            optionFour: "None of the above"
+            question: "Which of the following is not a HTML5 tag?",
+            optionOne: "track",
+            optionTwo: "video",
+            optionThree: "slider",
+            optionFour: "source"
         },
-    
-        {
-            question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-             optionOne: "writing-mode",
-             optionTwo: "text-indent",
-             optionThree: "word-break",
-             optionFour: "None of the above"
-        },
-       
-       {
-        question: "Which of the following CSS property is used to set the background image of an element?",
-         optionOne: "background-attachment",
-         optionTwo: "background-image",
-         optionThree: "background-color",
-         optionFour: "None of the above"
-        },
-          
-        {
-            question: " Which of the following is the correct syntax to make the background-color of all paragraph elements to yellow?",
-            optionOne: "p {background-color : yellow;}",
-            optionTwo: "p {background-color : #yellow;} ",
-            optionThree: "all {background-color : yellow;}",
-            optionFour: "all p {background-color : #yellow;} "
-        },
-    
-        {
-            question: "Which of the following is the correct syntax to display the hyperlinks without any underline?",
-             optionOne: "a {text-decoration : underline;}",
-             optionTwo: "a {decoration : no-underline;}",
-             optionThree: "a {text-decoration : none;}",
-             optionFour: "None of the above"
-        },
-        {
-            question: "Which of the following property is used as the shorthand property for the padding properties? ",
-             optionOne: "Indifferent",
-             optionTwo: "Defy",
-             optionThree: "Differ",
-             optionFour: "Postpone"
-        },
-        {
-            question: "The CSS property used to make the text bold is _________ ",
-             optionOne: "font-weight : bold",
-             optionTwo: "weight: bold",
-             optionThree: "font: bold",
-             optionFour: "style: bold"
-        },
-    
-        {
-            question: "Which of the following property is used as the shorthand property of margin properties",
-             optionOne: "margin-left",
-             optionTwo: "margin-right",
-             optionThree: "margin",
-             optionFour: "None of the above"
-        },
-        {
-            question: "Which of the following is used to specify the subscript of text using CSS?",
-             optionOne: "vertical-align: sub",
-             optionTwo: "vertical-align: super",
-             optionThree: "vertical-align: subscript",
-             optionFour: "None of the above"
-        },
-        {
-            question: "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-             optionOne: "writing-mode",
-             optionTwo: "text-indent",
-             optionThree: "word-break",
-             optionFour: "None of the above"
-        }
     ]
 
 let counter = 0;
