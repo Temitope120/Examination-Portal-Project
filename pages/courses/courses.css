@@ -665,3 +665,21 @@ border-radius: 14px 14px 0px 0px;
     align-items: center;
     color: #6B6C6F;
 }
+
+/* @media screen and (max-width: 425px){
+    .hide{
+        display: none !important;
+    }
+    .body-main{
+        margin-left: 35px;
+    }
+} */
+
+/* @media screen and (max-width: 425px){
+    .hide{
+        display: none;
+    }
+    .body-main{
+        margin-left: 35px;
+    }
+} */
