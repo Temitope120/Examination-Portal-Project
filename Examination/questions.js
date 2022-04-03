@@ -258,4 +258,100 @@ let questions = [
      ]
  },
 
+ {
+  numb: 23,
+     question: "JavaScript is a _________ language",
+     answer:  "A. Object-Oriented",
+     options:[
+         "A. Object-Oriented",
+         "B. Object-based",
+         "C. Assembly-language",
+         "D. High Level"
+
+     ]
+ },
+ {
+  numb: 24,
+     question: "In JavaScript, what is a block of statement?",
+     answer:  "B. block that combines a number of statements into a single compound statement",
+     options:[
+         "A. Conditional block",
+         "B. block that combines a number of statements into a single compound statement",
+         "C. both conditional block and a single statement",
+         "D. block that contains a single statement"
+
+     ]
+ },  
+ {
+  numb: 25,
+     question: "The terms function and var are known as javaScript______________",
+     answer:  "A. Keywords",
+     options:[
+         "A. Keywords",
+         "B. Data Types",
+         "C. Declaration Statement",
+         "D. Prototypes"
+
+     ]
+ },  
+ {
+  numb: 26,
+     question: "Which of the following keywords is used to define a variable in Javascript?",
+     answer:  "C. Both A and B",
+     options:[
+         "A. var",
+         "B. let",
+         "C. Both A and B",
+         "D. None of the Above"
+
+     ]
+ },
+ {
+  numb: 27,
+    question: "Which of the following methods is used to access HTML elements using Javascript?",
+    answer:  "C. Both A and B",
+    options:[
+         "A. getElementbyId()",
+         "B. getElementByClassName()",
+         "C. Both A and B",
+         "D. None of the above"
+
+    ]
+ },
+ {
+  numb: 28,
+     question: "Which of the following methods can  not be used to display data in some form using Javascript?",
+     answer:  "C. class",
+     options:[
+         "A. document.write",
+         "B. console.log",
+         "C. class",
+         "D. None of the above"
+
+     ]
+ },
+ {
+  numb: 29,
+     question: "HTML is a subset of ___________",
+     answer:  "D. SGML",
+     options:[
+         "A. XHTML",
+         "B. SGMT",
+         "C. SGME",
+         "D. SGML"
+
+     ]
+ },
+ {
+  numb: 30,
+     question: "Which of the following is not a HTML5 tag?",
+     answer:  "D. source",
+     options:[
+         "A. track",
+         "B. video",
+         "C. slider",
+         "D. source"
+
+     ]
+ },
 ];

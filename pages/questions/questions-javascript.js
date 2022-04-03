@@ -82,13 +82,6 @@
              optionFour: "None of the above"
         },
         {
-            question: "Which of the following property is used as the shorthand property for the padding properties? ",
-             optionOne: "Indifferent",
-             optionTwo: "Defy",
-             optionThree: "Differ",
-             optionFour: "Postpone"
-        },
-        {
             question: "The CSS property used to make the text bold is _________ ",
              optionOne: "font-weight : bold",
              optionTwo: "weight: bold",
