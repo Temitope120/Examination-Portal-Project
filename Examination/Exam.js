@@ -148,10 +148,9 @@ function optionSelected(answer){
     let allOptions = optionList.children.length;
    
     
-
     if (userAns === correctAns){
-         userScore += 1; 
-         console.log(userScore)
+        userScore += 1; 
+        console.log(userScore)
         answer.classList.add("correct");
         console.log('answer is correct');
         answer.insertAdjacentHTML("beforeend", tickIcon)

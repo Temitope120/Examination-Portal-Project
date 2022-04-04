@@ -36,22 +36,24 @@
       </div>
     </nav>
 
+
+
     <div class="image-form">
       <div class="form-area">
         <div class="form-head">
           <h2>Input your Details</h2>
         </div>
-        <form action="../pages/dashboard/dashboard.html" class="form" target="_blank">
+        <form action="../pages/dashboard/dashboard.html" class="form" target="_blank" id="form">
+          <div id="error" class="text-center"></div>
           <div class="input">
             <label>Staff ID</label>
-            <input type="number" name="Matric-num" id="matric-num" placeholder="Staff number" autofocus required />
+            <input type="number" name="Matric-num" id="staffId" placeholder="Staff number" autofocus/>
           </div>
           <div class="input">
             <label>Password</label>
-            <input type="password" name="" id="password" placeholder="password" autofocus required />
+            <input type="password" name="" id="password" placeholder="password" autofocus/>
           </div>
-          <button type="submit" data-toggle="modal"
-            data-target="#welcomeModal">Login</button>
+          <button type="submit">Login</button>
         </form>
       </div>
       <div class="girl-reading">
@@ -59,37 +61,6 @@
       </div>
     </div>
   </header>
-
-
-
-
-
-  <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog prof-mod" role="document">
-      <div class="modal-content p-5">
-        <div class="row mb-3">
-          <div class="col-12">
-            <h1 class="text-center text-white"> Welcome! </h1>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-  crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-  crossorigin="anonymous"></script>
 
   <script src="lecturerlogin.js"></script>
 </body>

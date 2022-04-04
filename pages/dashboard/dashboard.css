@@ -4,30 +4,13 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
 }
-.form-search{
-    background: #F5F7F6;
-    border-radius: 10px;
-    padding-left: 10px;
-    height: 48px;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    align-items: center;
-
-    color: #979797;
-}
-.search{
-    position: absolute;
-    left: 7%;
-    top: 36%;
-
+.search-text{
+    font-weight: 600;
 }
 .page{
     background: #F7FAFC;
-mix-blend-mode: normal;
-height: 100%;
+    mix-blend-mode: normal;
+    height: 100%;
 }
 .user{
     width: 40px;
@@ -285,39 +268,58 @@ color: #333333;
 }
 .orange{
     font-family: TT Norms Pro;
-font-style: normal;
-font-weight: normal ;
-font-size: 15px;
-line-height: 25px;
-
-
-color: #F2A892;
+    font-style: normal;
+    font-weight: normal ;
+    font-size: 15px;
+    line-height: 25px;
+    color: #F2A892;
 }
-.small-card{
+.small-card-1{
+    background-color: #34495E;
+    height: 130px;
+    width: 80%;
+    color: #fff;
+    border-radius: 16px;
+}
+.small-card-2{
+    /*  */
+    background-color: #36315E;
+    height: 130px;
+    width: 80%;
+    color: #fff;
+    border-radius: 16px;
+}
+.small-card-3{
     height: 120px;
-    background: #FFFFFF;
-border-radius: 16px;
+    width: 80%;
+    background-color: #F39C12;
+    border-radius: 16px;
 }
-.small-card p{
+.small-card-4{
+    height: 120px;
+    width: 80%;
+    background-color: #2980B9;
+    border-radius: 16px;
+}
+.small-card p, .small-cardd p{
     font-family: TT Norms Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 14px;
-
-/* Content/text */
-
-color: #6B6C6F;
-
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
 }
-.small-card h3{
+.information h3{
+    color: #fff;
+}
+.small-card h3, .small-card h3{
     font-family: TT Norms Pro;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 136.52%;
 
-    color: #252626;
+    color: #fff;
 }
 .small-card span{
     font-family: TT Norms Pro;
@@ -325,20 +327,19 @@ color: #6B6C6F;
     font-weight: 500;
     font-size: 10px;
     line-height: 16px;
-
-    color: #6B6C6F;
+    color: #fff;
 }
-.small-card .up{
-    background: #DEFFEE;
+.up{
+    background: #fff;
     border-radius: 6px;
     font-family: TT Norms Pro;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 10px;
     line-height: 16px;
     align-items: center;
     padding: 5px;
-    color: #66CB9F;
+    color: #0d412ad3;
 }
 .headeer h3{
     font-family: TT Norms Pro;
@@ -346,14 +347,82 @@ color: #6B6C6F;
     font-weight: bold;
     font-size: 23.6626px;
     line-height: 28px;
-
     color: #252626;
+}
+.fa-pencil{
+    color: #000;
 }
 .patient-card{
     background: #FFFFFF;
-box-shadow: 5.91564px 5.91564px 53.2408px rgba(0, 0, 0, 0.05);
-border-radius: 14px;
-height: 440px;
+    box-shadow: 5.91564px 5.91564px 53.2408px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+}
+.search-box {
+    outline: none;
+    border-style: none;
+    background-color: #E5E5E5;
+    border: transparent;
+    border-radius: 6px;
+    width: 200px;
+    height: 35px;
+}
+#table{
+    width: 2000px;
+    margin: auto;
+    table-layout: fixed;
+    border: 2px solid #CED4DA;
+    
+}
+#table thead tr th {
+    font-size: 30px;
+}
+#table thead tr th, #table tr td{
+    border-collapse: collapse;
+    border: 2px solid #CED4DA;
+    padding: 15px 10px;
+    color:#212529;
+    font-size: 18px;
+    
+}
+#table tbody tr:nth-child(even) {
+    background-color: #36315E !important;
+}
+.pagination {
+    display: inline-block;
+    margin: 20px auto;
+}
+  
+.pagination a {
+    color: #009CAA;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    font-family: TT Norms Pro;
+    background-color: #009CAA;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+}
+.pagination a:hover:not(.active) {
+    color: black;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 .filter-btn{
     background: #FDFDFD;

@@ -88,6 +88,19 @@ nav li a.active{
     transform: scale(1.1);
     transition: all 1.5s ease-in-out;
 }
+.sign-up{
+    color: #fff !important;
+    border: 1px solid #fff;
+    background: transparent;
+}
+.sign-up:hover{
+    color: #fff;
+    background-color: #F26722;
+    font-weight: 600;
+    transform: scale(1.1);
+    border: none;
+    transition: all 1.5s ease-in-out;
+}
 #services > div:nth-child(odd){
     background: #F26722;
 }
@@ -219,6 +232,13 @@ footer p{
         font-size: 1rem;
         color: #fff !important;
         background: none !important;
+    }
+    #linkss .sign-up{
+        display: block;
+        margin-left: auto;
+        border: none;
+        text-align: center;
+        margin-right: auto;
     }
     #linkss li a.active:hover, #linkss li a:hover {
         background: transparent !important;
@@ -359,5 +379,9 @@ footer p{
     .high-light {
         font-size: 7px;
         padding-left: 0px !important;
+    }
+    .flip-card-back p, .flip-card-back ul span{
+        font-size: 8px;
+        text-overflow: ellipsis;
     }
 }

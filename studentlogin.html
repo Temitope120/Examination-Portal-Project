@@ -36,17 +36,16 @@
           <div class="form-head">
             <h2>Input your Details</h2>
           </div>
-          <form action="/Examination/Exam.html" class="form" target="_blank">
+          <form action="/Examination/Exam.html" class="form" target="_blank" id="form">
+            <div id="error"></div>
             <div class="input">
-              <label>Name</label>
+              <label>Student ID</label>
               <input
-                type="text"
-                name="Matric-num"
-                id="Matric-num"
-                placeholder="Matric number"
-                autofocus
-                required
-              />
+                type="number"
+                name="student-id"
+                id="studentId"
+                placeholder="Enter your ID"
+                autofocus/>
             </div>
             <div class="input">
               <label>Password</label>
@@ -55,15 +54,20 @@
                 name="password"
                 id="password"
                 placeholder="password"
-                autofocus
-                required
-              />
+                autofocus/>
             </div>
             <button>Login</button>
+
+
           </form>
         </div>
       </div>
     </header>
+
+
+
+
+
     <script src="login.js"></script>
   </body>
 </html>

@@ -110,16 +110,32 @@ body {
   margin-bottom: 1.5rem;
   border: 2px solid #36315e;
 }
+#error{
+  color: red;
+  font-style: italic;
+  text-align: center;
+
+}
 button {
   width: 60%;
   padding: 1rem 1.8rem;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto !important;
   background-color: #36315e;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-weight: 600;
+}
+.modal-footer button{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60% !important;
+  display: block;
+}
+.welcome-text{
+  color: #F9A069;
+  font-weight: 700;
 }
 button:hover {
   background-color: #36315e;
