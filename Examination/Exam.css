@@ -11,7 +11,8 @@ body {
 .start-btn,
 .info-box,
 .quix-box,
-.result-box {
+.result-box,
+.courses {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,6 +20,9 @@ body {
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
     0px 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.3s ease;
+}
+.info-box{
+  /* width: 60%; */
 }
 .start-btn button {
   font-size: 1.5rem;
@@ -45,11 +49,26 @@ body {
 }
 .info-box.activeInfo,
 .quix-box.activeQuiz,
-.result-box.activeResult {
+.result-box.activeResult, 
+.courses.activeCourse {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50% -50%) scale(0.9);
+}
+.courses .Subject a{
+text-decoration: none;
+}
+.courses{
+width: 50%;
+background-color: #fff;
+border-radius: 5px;
+padding: 5%;
+opacity: 0;
+pointer-events: none;
+transform: translate(-50% -50%) scale(0.9);
+text-align: center;
+
 }
 .info-box .info-title {
   height: 60px;
@@ -360,6 +379,42 @@ footer .next-btn:hover {
   padding: 0 20px;
   cursor: pointer;
 }
-@media (max-width: 425px){
+@media (max-width: 768px){
+  .quix-box{
+    width: 75%;
+  }
+  .quix-box header .title {
+    font-size: 1.2rem;
+  }
+  .quix-box header .timer{
+    width: 27%;
+  }
+  .quix-box header .time-line{
+    display: none;
+  }
+}
+@media(max-width:425px){
+  .quix-box{
+    height: 90vh;
+  }
+  .quix-box header .title{
+    font-size: 1rem;
+  }
+  .quix-box header .timer .time-text{
+    font-size: .8rem;
+    
+  }
+}
+@media(max-width:375px){
+  .quix-box {
+    height: 100vh;
+    width: 90vw;
+  }
+  .info-box{
+    width: 90vw;
+  }
+  
+}
+@media(max-width:320px){
 
 }

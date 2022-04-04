@@ -6,7 +6,7 @@ let display = document.querySelector('.toggle-menu')
 
  document.querySelector('.form-area')
  .addEventListener('submit', () =>{
-     let matricNumber = document.querySelector('#matric-num').value;
+     let matricNumber = document.querySelector('#Matric-num').value;
      let password = document.querySelector("#password").value;
      const userInput ={matricNumber, password};
      sessionStorage.setItem(`${matricNumber},`, JSON.stringify(userInput));
