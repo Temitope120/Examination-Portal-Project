@@ -13,7 +13,7 @@
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/d53260fedc.js"></script>
     <title> Exam Portal Dashboard</title>
-    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="user-management.css">
 </head>
 
 <body>
@@ -53,15 +53,15 @@
                         </a> 
 
                         <a href="/pages/user-management/user-management.html" target="_blank">
-                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                            <li class="side-menu pb-3 align-items-center active py-2 ps-4 mb-4">
                                 <i class="fa fa-question-circle fa-2x me-2" aria-hidden="true"></i>
-                                <a class="side-link d-none-md text-decoration  ps-1 f-w-500" href="/pages/user-management/user-management.html"> Manage Users</a>
+                                <a class="side-link d-none-md text-decoration active ps-1 f-w-500" href="/pages/user-management/user-management.html"> Manage Users</a>
                             </li>
                         </a>
                         <a href="/pages/settings/settings.html" class="text-decoration" target="_blank"> 
-                            <li class="side-menu py-2 align-items-center active pb-3 ps-4 mb-4">
+                            <li class="side-menu py-2 align-items-center pb-3 ps-4 mb-4">
                                 <i class="fa fa-cog fa-2x" style="color: #fff;"></i>
-                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                <a class="side-link d-none-md ps-2 text-decoration f-w-500"
                                 href="/pages/settings/settings.html" target="_blank">
                                     Settings 
                                 </a>
@@ -91,40 +91,96 @@
                     <div class="row mb-5">
                         <div class="col-12">
                             <div class="patient-card p-4">
-                               
-                    <div class="row mb-4">
-                        <div class="col-12 card">
-                            <div class="row">
-                                <div class="col-9 settings-col-1" >
-                                            <div class="p-4 user-card">
-                                                <div class="d-flex new justify-content-start">
-                                                    <h5>Security</h5>
+                                <div class="page p-4 ">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="headeer">
+                                            <h2>User management</h2>
+                                            <p>Here’s what’s going on</p>
+                                        </div>
+                                        <div class="date">
+                                            <h6 class="mb-0">Wednesday</h6>
+                                            <p>6 April 2022</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 text-left goback" > <img src="../../assets/images/goback.svg" alt=""> Back</p>
+                
+                                    <div class="row mb-4">
+                                        <div class="col-12">
+                                            <div class="card p-4 user-card">
+                                                <div class="d-flex new mb-5 justify-content-start">
+                                                    <h5>Add New User</h5>
                                                 </div>
-                                                <h5 class="mb-4 change-password"> <b> Change Password </b></h5>
-                                                <div class="row mb-3">
-                                                    <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-4">
                                                         <div class="form-group">
-                                                            <label class="form-label">Current Password</label>
-                                                            <input type="password" placeholder="Enter your password" class="form-control form-input w-100" >
+                                                            <label class="form-label">First name</label>
+                                                          <input type="text" class="form-control form-input w-100"  >
+                                                          
                                                         </div>
                                                     </div>
-                                                    <div class="col-5">
+                                                    <div class="col-4">
                                                         <div class="form-group">
-                                                            <label class="form-label">New Password</label>
-                                                          <input type="text"  placeholder="Enter your password" class="form-control form-input w-100"  >
+                                                            <label class="form-label">Last name</label>
+                                                          <input type="text" class="form-control form-input w-100"  >
                                                           
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-5">
+                                                    <div class="col-4">
                                                         <div class="form-group">
-                                                            <label class="form-label"> Comfirm New Password</label>
-                                                          <input type="text"  placeholder="Enter your password" class="form-control form-input w-100"  >
+                                                            <label class="form-label">Email</label>
+                                                          <input type="text" class="form-control form-input w-100"  >
                                                           
                                                         </div>
                                                     </div>
-                                                    
+                                                    <div class="col-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Phone number</label>
+                                                          <input type="text" class="form-control form-input w-100"  >
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Password</label>
+                                                          <input type="password" class="form-control form-input w-100"  >
+                                                          
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Password</label>
+                                                          <input type="password" class="form-control form-input w-100"  >
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5 grey">
+                                                    <div class="col-5">
+                                                        <p>
+                                                            <img src="../../assets/images/usermh.svg" class="mr-2" alt="">
+                                                            User Management
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                                Super admin
+                                                            </label>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                            <label class="form-check-label" for="exampleRadios1">
+                                                              Admin
+                                                            </label>
+                                                          </div>
+                                                    </div>
                                                 </div>
                                                 <div class="row mt-5">
                                                     <div class="col-2">
@@ -134,40 +190,18 @@
                                                     </div>
                                                     <div class="col-2">
                                                         <button class=" btn update-btn w-100">
-                                                           Update
+                                                           Save
                                                         </button>
                                                     </div>
                                                 </div>  
                                             </div>
                                            
-                                        <!-- </div> -->
+                                        </div>
                                         
-                                    <!-- </div> -->
-                                </div>
-                                <div class="col-3">
-                                  <nav>
-                                      <ul>
-                                        <li class="right-side-menu pt-4 pb-3">
-                                            <a href="../settings/settings.html" class="right-link">
-                                                General Information
-                                            </a>
-                                        </li>
-                                        <li class="right-side-menu active pb-3">
-                                            <a href="../settings/security.html" class="right-link active">
-                                                Security
-                                            </a>
-                                        </li>
-                                        <li class="right-side-menu pb-3">
-                                            <a  href="../settings/notifications.html" class="right-link">
-                                                Notifications
-                                            </a>
-                                        </li>
-                                      </ul>
-                                  </nav>
-                                </div>
-                            </div>                  
-                        </div>
-                    </div>
+                                    </div>
+                               </div>
+                
+                   
 
                             </div>
 
