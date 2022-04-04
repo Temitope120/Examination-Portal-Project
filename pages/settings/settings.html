@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/d53260fedc.js"></script>
+    <title> Exam Portal Dashboard</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="main">
+
+            <div class="sidebar ps-rel">
+                <div class="p-2 mb-3 d-flex mx-auto w-80 mt-4 ">
+                    <a href="/index.html" target="_blank" class="navbar-brand">
+                        <img src="../../images/sbsc-logo-removebg-preview.png" class="me-auto ms-auto mb-3 dsp-none" alt="logo" width="40px" height="40px">
+                    </a>
+                </div>
+                <nav class="side-nav py-2 py-2-none mt-4">
+                    <ul class="">
+                        <a href="../../index.html" class="text-decoration" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-2x fa-home fa-2x me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../../index.html" target="_blank"> Home</a>
+                            </li>
+                        </a>
+                        <a href="../dashboard/dashboard.html" class="text-decoration" target="_blank"> 
+                            <li class="side-menu py-2 align-items-center pb-3 ps-4 mb-4">
+                                <img src="../../images/icon-dashboard.svg" alt="dashboard" class="mr-2">
+                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                    href="../dashboard/dashboard.html" target="_blank">
+                                    Dashboard 
+                                </a>
+                            </li>
+                        </a>
+
+                        <a href="../result/result.html" class="text-decoration" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-2x fa-certificate me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../result/result.html" target="_blank"> Result</a>
+                            </li>
+                        </a> 
+
+                        <a href="../students/students.html" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-question-circle fa-2x me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../students/students.html"> Students</a>
+                            </li>
+                        </a>
+                        <a href="/pages/settings/settings.html" class="text-decoration" target="_blank"> 
+                            <li class="side-menu py-2 align-items-center active pb-3 ps-4 mb-4">
+                                <i class="fa fa-cog fa-2x" style="color: #fff;"></i>
+                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                href="/pages/settings/settings.html" target="_blank">
+                                    Settings 
+                                </a>
+                            </li>
+                        </a>
+                        
+                        <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-2">
+                            <img src="../../images/dashboard-settings.svg" class="mr-2" alt="">
+                            <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../../index.html"> Log out </a>
+                        </li>
+                        </div>
+    
+                    </ul> <br> <br> <br> <br>
+                </nav>
+            </div>
+            <div class="body-main">
+                <nav class="navbar navbar-light px-5  bg-white sticky-top">
+                    <div class="col-10 mx-auto align-self-center">
+                        <!-- <p>Virtual School</p> -->
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                </nav>
+
+                <div class="page p-4 ">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="patient-card p-4">
+                               
+                    <div class="row mb-4">
+                        <div class="col-12 card">
+                            <div class="row">
+                                <div class="col-9 settings-col-1" >
+                                            <div class="p-4 user-card">
+                                                <div class="d-flex new justify-content-start">
+                                                    <h5>Security</h5>
+                                                </div>
+                                                <h5 class="mb-4 change-password"> <b> Change Password </b></h5>
+                                                <div class="row mb-3">
+                                                    <div class="col-5">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Current Password</label>
+                                                            <input type="password" placeholder="Enter your password" class="form-control form-input w-100" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="form-group">
+                                                            <label class="form-label">New Password</label>
+                                                          <input type="text"  placeholder="Enter your password" class="form-control form-input w-100"  >
+                                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-5">
+                                                        <div class="form-group">
+                                                            <label class="form-label"> Comfirm New Password</label>
+                                                          <input type="text"  placeholder="Enter your password" class="form-control form-input w-100"  >
+                                                          
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-2">
+                                                        <button class=" btn user-btn w-100">
+                                                            Cancel
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <button class=" btn update-btn w-100">
+                                                           Update
+                                                        </button>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                           
+                                        <!-- </div> -->
+                                        
+                                    <!-- </div> -->
+                                </div>
+                                <div class="col-3">
+                                  <nav>
+                                      <ul>
+                                        <li class="right-side-menu pt-4 pb-3">
+                                            <a href="../settings/settings.html" class="right-link">
+                                                General Information
+                                            </a>
+                                        </li>
+                                        <li class="right-side-menu active pb-3">
+                                            <a href="../settings/security.html" class="right-link active">
+                                                Security
+                                            </a>
+                                        </li>
+                                        <li class="right-side-menu pb-3">
+                                            <a  href="../settings/notifications.html" class="right-link">
+                                                Notifications
+                                            </a>
+                                        </li>
+                                      </ul>
+                                  </nav>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

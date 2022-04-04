@@ -352,13 +352,6 @@ color: #333333;
 .fa-pencil{
     color: #000;
 }
-.btn-view, .bg-new{
-    background-color: #36315E;
-    border-radius: 10px;
-}
-/* .bg-new{
-    background-color: ;
-} */
 .patient-card{
     background: #FFFFFF;
     box-shadow: 5.91564px 5.91564px 53.2408px rgba(0, 0, 0, 0.05);
@@ -412,7 +405,7 @@ color: #333333;
 }
 .pagination a.active {
     font-family: TT Norms Pro;
-    background-color: #36315E;
+    background-color: #009CAA;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
@@ -745,4 +738,31 @@ border-radius: 14px 14px 0px 0px;
     line-height: 17px;
     align-items: center;
     color: #6B6C6F;
+}
+.right-link{
+    text-decoration: none;
+    color: #36315E;
+    font-weight: 500;
+}
+.right-link.active{
+    text-decoration: none;
+    color: #7e74c4;
+    font-weight: 500;
+}
+.right-side-menu{
+    list-style-type: none;
+}
+.user-btn{
+    background-color: #36315E;
+    color: #fff;
+    font-weight: 500;
+}
+.update-btn{
+    background-color: #8781b6;
+    color: #fff;
+    font-weight: 500;
+}
+.update-btn, .user-btn:hover{
+    color: #fff;
+    font-weight: 500;
 }

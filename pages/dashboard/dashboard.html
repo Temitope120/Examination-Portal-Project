@@ -58,7 +58,15 @@
                                 <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../students/students.html"> Students</a>
                             </li>
                         </a>
-
+                        <a href="/pages/settings/settings.html" class="text-decoration" target="_blank"> 
+                            <li class="side-menu py-2 align-items-center  pb-3 ps-4 mb-4">
+                                <i class="fa fa-cog fa-2x" style="color: #fff;"></i>
+                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                href="/pages/settings/settings.html" target="_blank">
+                                    Settings 
+                                </a>
+                            </li>
+                        </a>
                         
                         <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-2">
                             <img src="../../images/dashboard-settings.svg" class="mr-2" alt="">
@@ -124,7 +132,7 @@
                         
 
                                     </div>
-                                    <div><img src="../../assets/images/verified.svg" alt=""></div>
+                                    <div><i class="fa fa-book fa-2x" style="color: #000;"></i></div>
                                 </div>
                             </div>
 
@@ -159,15 +167,22 @@
                     </div>
                     <div class="row mb-5">
                         <div class="col-12">
-                            <div class="patient-card p-4">
+                            <div class="patient-card p-4 mb-4">
                                 <div class="row mb-5">
                                     <div class="col-12">
                                         <div class="">
                                             <div class="row mb-3">
                                                 <div class="col-12">
-                                                    <div class="row mb-2">
+                                                    <div class="row mb-5">
                                                         <div class="col-8">
-                                                            <p>Show <b>10</b> entries</p>
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <p>Show <b>10</b> entries</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <button class=" btn btn-view text-white"> <i class="fa fa-eye"></i> View all Students</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="col-4">
                                                             <form action="" id="searchBox">
@@ -183,8 +198,174 @@
                                                                     <th>First Name</th>
                                                                     <th>Last Name</th>
                                                                     <th>Username</th>
+                                                                    <th>Company</th>
+                                                                    <th>Status</th>
                                                                     <th>Course</th>
                                                                     <th>Score</th>
+                                                                    <th>Edit</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Chemistry</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Adeleke </td>
+                                                                    <td>Segun</td>
+                                                                    <td>Adeleke</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>English Language</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Matanmi </td>
+                                                                    <td>Martins</td>
+                                                                    <td>Martins</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>Biology</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company C</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company B</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company B</td>
+                                                                    <td><span class="bg-new py-1 px-3 
+                                                                        text-white">New Deal</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Company C</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="row">
+                                                            <div class="col-9"></div>
+                                                            <div class="col-3">
+                                                                <div class="pagination ms-auto">
+                                                                    <a href="#">&laquo;</a>
+                                                                    <a href="#" class="active">1</a>
+                                                                    <a href="#">2</a>
+                                                                    <a href="#">3</a>
+                                                                    <a href="#">&raquo;</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="patient-card p-4">
+                                <div class="row mb-5">
+                                    <div class="col-12">
+                                        <div class="">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="row mb-5">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <p>Show <b>10</b> entries</p>
+                                                                </div>
+                                                                <div class="col-4">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <button class=" btn btn-view text-white"> <i class="fa fa-eye"></i> View all Results</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <table id="myTable" class="table table-striped" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Username</th>
+                                                                    <th>Course</th>
+                                                                    <th>Result</th>
                                                                     <th>Edit</th>
                                                                 </tr>
                                                             </thead>
@@ -211,6 +392,14 @@
                                                                     <td>Martins</td>
                                                                     <td>Martins</td>
                                                                     <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Biology</td>
                                                                     <td id="score">0</td>
                                                                     <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
                                                                 </tr>
@@ -262,24 +451,21 @@
                                                                     <td id="score">0</td>
                                                                     <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>Ayomide </td>
-                                                                    <td>Moses</td>
-                                                                    <td>Moses19</td>
-                                                                    <td>Mathematics</td>
-                                                                    <td id="score">0</td>
-                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
-                                                                </tr>
                                                                 
                                                                 
                                                             </tbody>
                                                         </table>
-                                                        <div class="pagination ms-auto">
-                                                            <a href="#">&laquo;</a>
-                                                            <a href="#" class="active">1</a>
-                                                            <a href="#">2</a>
-                                                            <a href="#">3</a>
-                                                            <a href="#">&raquo;</a>
+                                                        <div class="row">
+                                                            <div class="col-9"></div>
+                                                            <div class="col-3">
+                                                                <div class="pagination ms-auto">
+                                                                    <a href="#">&laquo;</a>
+                                                                    <a href="#" class="active">1</a>
+                                                                    <a href="#">2</a>
+                                                                    <a href="#">3</a>
+                                                                    <a href="#">&raquo;</a>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
