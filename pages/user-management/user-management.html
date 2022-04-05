@@ -94,8 +94,7 @@
                                 <div class="page p-4 ">
                                     <div class="d-flex justify-content-between mb-3">
                                         <div class="headeer">
-                                            <h2>User management</h2>
-                                            <p>Here’s what’s going on</p>
+                                            <h2>Student Management</h2>
                                         </div>
                                         <div class="date">
                                             <h6 class="mb-0">Wednesday</h6>
@@ -108,78 +107,64 @@
                                         <div class="col-12">
                                             <div class="card p-4 user-card">
                                                 <div class="d-flex new mb-5 justify-content-start">
-                                                    <h5>Add New User</h5>
+                                                    <h5>Add New Student</h5>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">First name</label>
-                                                          <input type="text" class="form-control form-input w-100"  >
-                                                          
+
+
+                                                <div id="form">
+                                                    <div class="row">
+                                        
+                                                        <div class="col-4">
+                                                            <div class="form-group" >
+                                                                <label class="form-label">First name</label>
+                                                              <input type="text" id="firstName" class="form-control form-input w-100">
+                                                              
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <label class="form-label">Last name</label>
+                                                              <input type="text" id="lastName" class="form-control form-input w-100"  >
+                                                              
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">Last name</label>
-                                                          <input type="text" class="form-control form-input w-100"  >
-                                                          
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div id="error"></div>
+                                                            <div class="form-group">
+                                                                <label class="form-label">Password</label>
+                                                              <input type="password" id="password" class="form-control form-input w-100"  >
+                                                              
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">Email</label>
-                                                          <input type="text" class="form-control form-input w-100"  >
-                                                          
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">Phone number</label>
-                                                          <input type="text" class="form-control form-input w-100"  >
-                                                          
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">Password</label>
-                                                          <input type="password" class="form-control form-input w-100"  >
-                                                          
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="form-group">
-                                                            <label class="form-label">Password</label>
-                                                          <input type="password" class="form-control form-input w-100"  >
-                                                          
+                                                        <div class="col-4">
+                                                            <div class="form-group">
+                                                                <label class="form-label"> Confirm Password</label>
+                                                              <input type="password" id="confirmPassword" class="form-control form-input w-100"  >
+                                                              
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                                 <div class="row mt-5 grey">
                                                     <div class="col-5">
                                                         <p>
                                                             <img src="../../assets/images/usermh.svg" class="mr-2" alt="">
-                                                            User Management
+                                                            Student Management
                                                         </p>
                                                     </div>
                                                     <div class="col-2">
                                                         <div class="form-check">
                                                             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                                             <label class="form-check-label" for="exampleRadios1">
-                                                                Super admin
+                                                                Admin
                                                             </label>
                                                           </div>
                                                     </div>
                                                     <div class="col-2">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                                            <label class="form-check-label" for="exampleRadios1">
-                                                              Admin
-                                                            </label>
-                                                          </div>
+                                                    
                                                     </div>
                                                 </div>
                                                 <div class="row mt-5">
@@ -189,9 +174,10 @@
                                                         </button>
                                                     </div>
                                                     <div class="col-2">
-                                                        <button class=" btn update-btn w-100">
-                                                           Save
-                                                        </button>
+                                                        <button type="submit" class="btn update-btn w-100" data-bs-toggle="modal" data-bs-target="#myModal">
+                                                             Save
+                                                          </button>
+
                                                     </div>
                                                 </div>  
                                             </div>
@@ -216,6 +202,36 @@
 
 
 
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <h4 class="text-center">
+                Student Added Successfully!
+            </h4>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn update-btn" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -224,6 +240,7 @@
         crossorigin="anonymous"></script>
 
     <script src="dashboard.js"></script>
+    <script src="/pages/user-management/user-management.js"></script>
 </body>
 
 </html>

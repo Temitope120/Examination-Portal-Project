@@ -311,6 +311,7 @@ color: #333333;
 }
 .information h3{
     color: #fff;
+    font-size: 20px;
 }
 .small-card h3, .small-card h3{
     font-family: TT Norms Pro;
@@ -318,8 +319,6 @@ color: #333333;
     font-weight: bold;
     font-size: 20px;
     line-height: 136.52%;
-
-    color: #fff;
 }
 .small-card span{
     font-family: TT Norms Pro;
@@ -345,7 +344,7 @@ color: #333333;
     font-family: TT Norms Pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 23.6626px;
+    font-size: 20px;
     line-height: 28px;
     color: #252626;
 }

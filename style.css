@@ -42,7 +42,7 @@ nav li{
 .nav-link:hover{
     background-color: #fff !important;
     border-radius: 30px;
-    font-weight: 700;
+    /* font-weight: 700; */
 }
 .nav-link{
     font-weight: 600;

@@ -4,14 +4,42 @@ let display = document.querySelector('.toggle-menu')
     display.classList.toggle('display')
  })
 
- document.querySelector('.form-area')
- .addEventListener('submit', () =>{
-     let matricNumber = document.querySelector('#matric-num').value;
-     let password = document.querySelector("#password").value;
-     const userInput = {matricNumber, password};
-     sessionStorage.setItem(`${matricNumber},`, JSON.stringify(userInput));
-    //  alert(`you have been logged in`)
- })
+ document.querySelector('.form-area').addEventListener('submit', saveSignUpData)
+
+ function saveSignUpData(){
+    let idStudent = document.querySelector('#studentId').value;
+    let password = document.querySelector("#password").value;
+    const userInput = {idStudent, password};
+    sessionStorage.setItem(`${idStudent},`, JSON.stringify(userInput));
+
+    localStorage.setItem("id_student", idStudent)
+    localStorage.setItem("pass_word", password)
+
+
+    let loginRecords = new Array();
+    if(idStudent != password != ""){
+        loginRecords = JSON.parse(localStorage.getItem("signupdata"))
+        if(loginRecords.some((v) => {
+            return v.idStudent === idStudent
+        })){
+            alert("Email Already Exist");
+        }
+        if(loginRecords.some((v) => {
+            return v.psw === password1
+        })){
+           alert("password is not the same");
+        }else{
+            loginRecords.push({
+                "id_student" : idStudent,
+                "pass_word": password,
+                "con_pass": password1
+            })
+        }
+    }else{
+        alert("Go to Sign Up page")
+    }
+    localStorage.setItem("signupdata", JSON.stringify(loginRecords));
+ }
 
 
 
