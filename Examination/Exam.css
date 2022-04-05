@@ -191,7 +191,7 @@ text-align: center;
 }
 .quix-box header .timer .time-text {
   font-weight: 500;
-  font-size: .rem;
+  font-size: .85rem;
   user-select: none;
 }
 .quix-box header .timer .timer-sec {

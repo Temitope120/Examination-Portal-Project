@@ -23,27 +23,29 @@
   </head>
   <body>
     <!-- start button -->
-    <div class="start-btn"><button>Start Quiz</button></div>
+    <div class="start-btn"><button>Start Exam</button></div>
     <!-- infoBox -->
     <div class="info-box">
       <div class="info-title">
-        <span>Some Rules For This Quiz</span>
+        <h3>Instructions</h3>
       </div>
       <div class="info-list">
         <div class="info">
-          1. you will have only <span>15 seconds</span> per question
+          1.You will have only <span>15 seconds</span> per question
         </div>
-        <div class="info">2. once you select you answer, you cant reselect</div>
         <div class="info">
-          3. you can't select any option once the time goes off
+          2. Once you select you answer, you can't reselect
         </div>
-        <div class="info">4. you can't exot from the quoz once you start</div>
         <div class="info">
-          5. you'll get points on the basis of your correct answers.
+          3. You can't select any option once the time goes off
+        </div>
+        <div class="info">4. You can't exit from the quiz once you start</div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
         </div>
       </div>
       <div class="buttons">
-        <button id="quit">Exit Quiz</button>
+        <button id="quit">Exit Exam</button>
         <button id="restart">Continue</button>
       </div>
     </div>
@@ -95,9 +97,10 @@
     <!-- result box -->
     <div class="result-box">
       <div class="icon">
-        <i class="fas fa-crown"></i>
+        <!-- <i class="fas fa-crown"></i> -->
+        <img src="/Examination-Portal-Project/images/clap-icon.png" alt="" />
       </div>
-      <div class="complete-text">You've Completed the Quiz!</div>
+      <div class="complete-text">You've Completed the Exam!</div>
       <div class="score-text">
         <span
           >and sorry, you got only
@@ -107,8 +110,15 @@
         >
       </div>
       <div class="buttons">
-        <button class="restart">Restart Quiz</button>
-        <button class="Quit">Exit Quiz</button>
+        <a
+          class="home-btn"
+          href="/Examination-Portal-Project/Examination/Exam.html"
+          >Take Another Exam</a
+        >
+        <a href="/Examination-Portal-Project/index.html" class="home-btn">
+          Home</a
+        >
+        <button class="Quit">Exit Exam</button>
       </div>
     </div>
     <script src="/Examination-Portal-Project/Examination/Maths/Mathsquestions.js"></script>

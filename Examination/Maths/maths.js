@@ -43,27 +43,7 @@ continueBtn.onclick = ()=>{
     // restart quit
     const restartQuiz = resultBox.querySelector(".buttons .restart")
     const quitQuiz = resultBox.querySelector(".buttons .Quit")
-    restartQuiz.onclick= () =>{
-        resultBox.classList.remove('activeResult');
-        quizBox.classList.add('activeQuiz');
-    let queCount = 0;
-    let queNumb=1
-    let timeValue = 60;
-    let widthValue = 0;
-    let userScore = 0; 
-     showQuestions(queCount);
-        queCounter(queNumb)
-        clearInterval(counter)
-        startTimer(timeValue)
-         clearInterval(counterLine)
-        startTimerLine(widthValue)
-        nextBtn.style.display ="none"
-        timeOff.textContent = 'Time Left'
-        
-    
-
-    }
-    quitQuiz.onclick=()=>{
+        quitQuiz.onclick=()=>{
         window.location.reload()
     }
 
