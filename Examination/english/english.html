@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="/Examination-Portal-Project/Examination/Exam.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Examination-Portal-Project/Examination/Exam.css"
+    />
+  </head>
+  <body>
+    <!-- start button -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+    <!-- infoBox -->
+    <div class="info-box">
+      <div class="info-title">
+        <span>Some Rules For This Quiz</span>
+      </div>
+      <div class="info-list">
+        <div class="info">
+          1. you will have only <span>15 seconds</span> per question
+        </div>
+        <div class="info">2. once you select you answer, you cant reselect</div>
+        <div class="info">
+          3. you can't select any option once the time goes off
+        </div>
+        <div class="info">4. you can't exot from the quoz once you start</div>
+        <div class="info">
+          5. you'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="quit">Exit Quiz</button>
+        <button id="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- quiz-box -->
+    <div class="quix-box">
+      <header>
+        <div class="title">Use of English</div>
+        <div class="timer">
+          <div class="time-text">Time Left</div>
+          <div class="timer-sec">15</div>
+        </div>
+        <div class="time-line"></div>
+      </header>
+      <section>
+        <div class="que-text">
+          <!-- <span>What does HTML stands for?</span> -->
+        </div>
+        <div class="option-list">
+          <div class="option">
+            <span>HyperText Processor</span>
+            <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+          </div>
+          <div class="option">
+            <span>HyperText Markup Language</span>
+            <div class="icon cross">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+          </div>
+          <div class="option">
+            <span>HyperText Markup Language</span>
+          </div>
+          <div class="option">
+            <span>HyperText Multi Language</span>
+          </div>
+        </div>
+      </section>
+      <!-- quiz footer -->
+      <footer>
+        <div class="total-que">
+          <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+        </div>
+        <div class="next-prev">
+          <button class="previous">Previous Question</button>
+          <button class="next-btn">Next Question</button>
+        </div>
+      </footer>
+    </div>
+    <!-- result box -->
+    <div class="result-box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete-text">You've Completed the Quiz!</div>
+      <div class="score-text">
+        <span
+          >and sorry, you got only
+          <p>2</p>
+          out of
+          <p>5</p></span
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart">Restart Quiz</button>
+        <button class="Quit">Exit Quiz</button>
+      </div>
+    </div>
+    <script src="/Examination-Portal-Project/Examination/english/englishQuestions.js"></script>
+    <script src="/Examination-Portal-Project/Examination/english/english.js"></script>
+  </body>
+</html>

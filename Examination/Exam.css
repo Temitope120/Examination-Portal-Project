@@ -58,9 +58,10 @@ body {
 }
 .courses .Subject a{
 text-decoration: none;
+color: #343a40;
 }
 .courses{
-width: 50%;
+width: 40%;
 background-color: #fff;
 border-radius: 5px;
 padding: 5%;
@@ -69,6 +70,17 @@ pointer-events: none;
 transform: translate(-50% -50%) scale(0.9);
 text-align: center;
 
+}
+.courses .buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+#exit{
+  margin-right: 10px;
+}
+.courses .header{
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .info-box .info-title {
   height: 60px;
@@ -108,17 +120,26 @@ text-align: center;
   font-weight: 600;
   cursor: pointer;
 }
-#restart {
+#restart, #proceed {
   background-color: #007bff;
   color: #fff;
   border: 1px solid #007bff;
 }
 
-#restart:hover {
+#restart:hover, #proceed:hover{
   background-color: lightgray;
   color: #007bff;
+  
 }
-#quit:hover {
+#proceed{
+  padding: 10px;
+  border-radius: 5px;
+}
+#exit{
+  padding: 10px;
+  border-radius: 5px;
+}
+#quit:hover, #exit:hover {
   background-color: #007bff;
   color: #fff;
 }
