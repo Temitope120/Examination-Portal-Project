@@ -71,6 +71,14 @@ transform: translate(-50% -50%) scale(0.9);
 text-align: center;
 
 }
+.home-btn{
+  background: #36315e;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding: 10px 20px ;
+  text-decoration: none;
+}
 .courses .buttons{
   display: flex;
   justify-content: flex-end;
@@ -97,6 +105,7 @@ text-align: center;
 .info-box .info-list .info {
   margin: 5px 0;
   font-size: 1rem;
+  padding-bottom: 20px;
 }
 .info-box .info-list .info span {
   font-weight: 600;
@@ -182,7 +191,7 @@ text-align: center;
 }
 .quix-box header .timer .time-text {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: .rem;
   user-select: none;
 }
 .quix-box header .timer .timer-sec {

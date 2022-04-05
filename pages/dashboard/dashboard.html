@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/d53260fedc.js"></script>
+    <title> Exam Portal Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="main">
+
+            <div class="sidebar ps-rel">
+                <div class="p-2 mb-3 d-flex mx-auto w-80 mt-4 ">
+                    <a href="/index.html" target="_blank" class="navbar-brand">
+                        <img src="../../images/sbsc-logo-removebg-preview.png" class="me-auto ms-auto mb-3 dsp-none" alt="logo" width="40px" height="40px">
+                    </a>
+                </div>
+                <nav class="side-nav py-2 py-2-none mt-4">
+                    <ul class="">
+                        <a href="../../index.html" class="text-decoration" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-2x fa-home fa-2x me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../../index.html" target="_blank"> Home</a>
+                            </li>
+                        </a>
+                        <a href="../dashboard/dashboard.html" class="text-decoration" target="_blank"> 
+                            <li class="side-menu py-2 align-items-center active pb-3 ps-4 mb-4">
+                                <img src="../../images/icon-dashboard.svg" alt="dashboard" class="mr-2">
+                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                    href="../dashboard/dashboard.html" target="_blank">
+                                    Dashboard 
+                                </a>
+                            </li>
+                        </a>
+
+                        <a href="../result/result.html" class="text-decoration" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-2x fa-certificate me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../result/result.html" target="_blank"> Result</a>
+                            </li>
+                        </a> 
+
+                        <a href="/pages/user-management/user-management.html" target="_blank">
+                            <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-4">
+                                <i class="fa fa-question-circle fa-2x me-2" aria-hidden="true"></i>
+                                <a class="side-link d-none-md text-decoration ps-1 f-w-500" href="/pages/user-management/user-management.html"> Manage Users</a>
+                            </li>
+                        </a>
+                        <a href="/pages/settings/settings.html" class="text-decoration" target="_blank"> 
+                            <li class="side-menu py-2 align-items-center  pb-3 ps-4 mb-4">
+                                <i class="fa fa-cog fa-2x" style="color: #fff;"></i>
+                                <a class="side-link d-none-md active ps-2 text-decoration f-w-500"
+                                href="/pages/settings/settings.html" target="_blank">
+                                    Settings 
+                                </a>
+                            </li>
+                        </a>
+                        
+                        <li class="side-menu pb-3 align-items-center py-2 ps-4 mb-2">
+                            <img src="../../images/dashboard-settings.svg" class="mr-2" alt="">
+                            <a class="side-link d-none-md text-decoration ps-2 f-w-500" href="../../index.html"> Log out </a>
+                        </li>
+                        </div>
+    
+                    </ul> <br> <br> <br> <br>
+                </nav>
+            </div>
+            <div class="body-main">
+                <nav class="navbar navbar-light px-5  bg-white sticky-top">
+                    <div class="col-10 mx-auto align-self-center">
+                        <!-- <p>Virtual School</p> -->
+                    </div>
+                    <div class="col-2">
+                        <div class="d-flex ">
+                            <div class="mr-2">
+                                <img src="../../images/rounded-user-img.jpg" class="user" alt="">
+                            </div>
+                            <div>
+                                <h6 class="mb-0 name">John Doe</h6>
+                                <p class="mb-0 role">Super Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="page p-4 ">
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="headeer">
+                            <h2>Good morning Mr. John</h2>
+                        </div>
+                        <div class="date">
+                            <h6 class="mb-0">Wednesday</h6>
+                            <p>6th April 2022</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5 information">
+                        <div class="col-3">
+                            <div class="small-card-1 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="">Total Students</p>
+                                        <h3 class="mb-2">300</h3>
+                                        <div class="d-flex">
+                                            <p class="me-2 up mb-0">13+</p>
+                                            <span class="ps-2">since last month</span>
+                                        </div>
+                                    </div>
+                                    <div><img src="/Examination-Portal-Project/images/students-icon-removebg-preview.png" alt="" width="50px" height="50px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="small-card-2 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="">Subjects</p>
+                                        <h3 class="">4</h3>
+
+                                    </div>
+                                    <div><i class="fa fa-book fa-2x" style="color: #000;"></i></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <div class="small-card-3 p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-white">Activity</p>
+                                        <h3 class="mb-2">15</h3>
+
+                                    </div>
+                                    <div><img src="/Examination-Portal-Project/images/activity-icon-removebg-preview.png" alt="" width="30px" height="30px"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-3">
+                            <div class="small-card-4  p-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="text-white">Notifications</p>
+                                        <h3 class="mb-2">0</h3>
+
+                                    </div>
+                                    <div><img src="/Examination-Portal-Project/images/notification-img-removebg-preview.png" alt="" width="50px" height="50px"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="patient-card p-4 mb-4">
+                                <div class="row mb-5">
+                                    <div class="col-12">
+                                        <div class="">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="row mb-5">
+                                                        <div class="col-8">
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <p>Show <b>10</b> entries</p>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <button class=" btn btn-view text-white"> <i class="fa fa-eye"></i> View all Students</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <form action="" id="searchBox">
+                                                                <label for="search" class="search-text"> Search Students:</label>
+                                                                <input type="search" class="search-box ps-2" id="search" autofocus>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <table id="myTable" class="table table-striped" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Username</th>
+                                                                    <th>School</th>
+                                                                    <th>Status</th>
+                                                                    <th>Course</th>
+                                                                    <th>Score</th>
+                                                                    <th>Edit</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Chemistry</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr class="tr">
+                                                                    <td>Adeleke </td>
+                                                                    <td>Segun</td>
+                                                                    <td>Adeleke</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>English Language</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Matanmi </td>
+                                                                    <td>Martins</td>
+                                                                    <td>Martins</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>Biology</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School C</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School B</td>
+                                                                    <td><span class="bg-new py-1 px-3 text-white">New Deal</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School A</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School B</td>
+                                                                    <td><span class="bg-new py-1 px-3 
+                                                                        text-white">New Deal</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr class="tr">
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>School C</td>
+                                                                    <td><span class="bg-warning p-1 text-white" style="border-radius: 10px;">Payment Due</span></td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">0</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="row">
+                                                            <div class="col-9"></div>
+                                                            <div class="col-3">
+                                                                <div class="pagination ms-auto">
+                                                                    <a href="#">&laquo;</a>
+                                                                    <a href="#" class="active">1</a>
+                                                                    <a href="#">2</a>
+                                                                    <a href="#">3</a>
+                                                                    <a href="#">&raquo;</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="patient-card p-4 mb-3">
+                                <div class="row mb-5">
+                                    <div class="col-12 mb-3">
+                                        <h4 class="text-center">Courses</h4>
+                                        <div class="courses-card p-4">
+                                            <div class="row mb-2">
+                                                <div class="col-lg-10 col-xxl-10 col-md-8">
+                                                    <div class="headeer">
+                                                        <a href="../questions/questions.html" class="text-decoration-none" target="_blank">
+                                                            <h3>Mathematics</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-xxl-2 col-md-4">
+                                                    <button class="btn btn-warning">Pending</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="courses-card p-4">
+                                            <div class="row mb-2">
+                                                <div class="col-lg-10 col-xxl-10 col-md-8">
+                                                    <div class="headeer">
+                                                        <a href="../questions/questions.html" target="_blank" class="text-decoration-none">
+                                                            <h3>English Language</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-xxl-2 col-md-4">
+                                                    <button class="btn btn-warning">Pending</button>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="col-12 mb-2">
+                                        <div class="courses-card p-4">
+                                            <div class="row mb-2">
+                                                <div class="col-lg-10 col-xxl-10 col-md-8">
+                                                    <div class="headeer">
+                                                        <a href="../questions/questions.html" target="_blank" class="text-decoration-none">
+                                                            <h3>Biology</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-xxl-2 col-md-4">
+                                                    <button class="btn btn-warning">Pending</button>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="col-12 mb-3">
+                                        <div class="courses-card p-4">
+                                            <div class="row mb-3">
+                                                <div class="col-lg-10 col-xxl-10 col-md-8">
+                                                    <div class="headeer">
+                                                        <a href="../questions/questions.html" target="_blank" class="text-decoration-none">
+                                                            <h3>Chemistry</h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-xxl-2 col-md-4">
+                                                    <button class="btn btn-warning">Pending</button>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="patient-card p-4">
+                                <div class="row mb-5">
+                                    <div class="col-12">
+                                        <div class="">
+                                            <div class="row mb-3">
+                                                <div class="col-12">
+                                                    <div class="row mb-5">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-4">
+                                                                    <p>Show <b>10</b> entries</p>
+                                                                </div>
+                                                                <div class="col-4">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <button class=" btn btn-view text-white"> <i class="fa fa-eye"></i> View all Results</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <table id="myTable" class="table table-striped" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>First Name</th>
+                                                                    <th>Last Name</th>
+                                                                    <th>Username</th>
+                                                                    <th>Course</th>
+                                                                    <th>Result</th>
+                                                                    <th>Edit</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Chemistry</td>
+                                                                    <td id="score">60</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>Adeleke </td>
+                                                                    <td>Segun</td>
+                                                                    <td>Adeleke</td>
+                                                                    <td>English Language</td>
+                                                                    <td id="score">40</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Matanmi </td>
+                                                                    <td>Martins</td>
+                                                                    <td>Martins</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">80</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Biology</td>
+                                                                    <td id="score">30</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Biology</td>
+                                                                    <td id="score">100</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">90</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">50</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">60</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">70</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ayomide </td>
+                                                                    <td>Moses</td>
+                                                                    <td>Moses19</td>
+                                                                    <td>Mathematics</td>
+                                                                    <td id="score">40</td>
+                                                                    <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                                                                </tr>
+                                                                
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                        <div class="row">
+                                                            <div class="col-9"></div>
+                                                            <div class="col-3">
+                                                                <div class="pagination ms-auto">
+                                                                    <a href="#">&laquo;</a>
+                                                                    <a href="#" class="active">1</a>
+                                                                    <a href="#">2</a>
+                                                                    <a href="#">3</a>
+                                                                    <a href="#">&raquo;</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

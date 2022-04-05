@@ -1,0 +1,868 @@
+@font-face {
+    font-family: TT Norms Pro;
+    src: url('../../assets/fonts/tt-norms-pro-cufonfonts/TT Norms Pro Regular.otf');
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.search-text {
+    font-weight: 600;
+}
+
+.page {
+    background: #F7FAFC;
+    mix-blend-mode: normal;
+    height: 100%;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-drop-name {
+    background: rgba(236, 236, 236, 0.47);
+    border-radius: 5.24465px;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.5872px;
+    line-height: 17px;
+    font-family: 'Source Sans Pro';
+    color: #525252;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8.39144px;
+    line-height: 11px;
+    color: #878787;
+}
+
+.btn-drop-name:focus {
+    outline: none !important;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background: #36315E;
+    mix-blend-mode: normal;
+    min-width: 211px;
+    max-width: 211px;
+    height: 100vh;
+    position: fixed;
+}
+
+.side-nav {
+    background: #36315E;
+    mix-blend-mode: normal;
+    height: 100%;
+}
+
+.side-menu.active,
+.side-menu:hover {
+    background: #4b4480;
+    border-radius: 5px;
+    border-left: 3px solid #F2A892;
+    list-style-type: none;
+}
+
+.side-menu {
+    list-style-type: none;
+}
+
+.side-link {
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.fa {
+    color: #fff;
+}
+
+.side-link.active,
+.side-link:hover {
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.body-main {
+    background: #ffffff;
+    margin-left: 211px;
+    width: 85%;
+}
+
+.dropdown-item {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+
+    color: #000000;
+}
+
+.bottom-menu {
+    position: absolute;
+    top: 67%;
+    width: 100%;
+}
+
+.bottom-menu p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 11px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.powered {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #525252;
+}
+
+.bottom-footer {
+    position: absolute;
+    top: 83%
+}
+
+.green-bell {
+    background: #009CAA;
+    box-shadow: 0px 5px 10px rgba(29, 132, 181, 0.3);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: TT Norms Pro;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: TT Norms Pro;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #333333;
+}
+
+.role {
+    font-family: TT Norms Pro;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #333333;
+
+}
+
+/* end head */
+
+.form-input {
+    background: #FDFDFD;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    height: 48px;
+    color: #BCBCBC;
+}
+
+.form-input:focus {
+    background: #FDFDFD;
+    border: 1px solid #009CAA;
+    box-sizing: border-box;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B6C6F;
+    border-radius: 10px;
+}
+
+.headeer h2 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+
+    color: #252626;
+}
+
+.headeer p {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #6B6C6F;
+}
+
+.date h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+    color: #6B6C6F;
+}
+
+.date p {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #252626;
+}
+
+.form-label {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Content/text */
+
+    color: #6B6C6F;
+}
+
+.green-btn,
+.green-btn:focus {
+    background: #009CAA;
+    border-radius: 5px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    height: 48px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.orange-btn,
+.orange-btn:focus {
+    background: #F2A892;
+    border-radius: 4px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 48px;
+    outline: none;
+    border: none;
+}
+
+.orange {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #F2A892;
+}
+
+.small-card-1 {
+    background-color: #34495E;
+    height: 130px;
+    width: 80%;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.small-card-2 {
+    /*  */
+    background-color: #36315E;
+    height: 130px;
+    width: 80%;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.small-card-3 {
+    height: 120px;
+    width: 80%;
+    background-color: #F39C12;
+    border-radius: 16px;
+}
+
+.small-card-4 {
+    height: 120px;
+    width: 80%;
+    background-color: #2980B9;
+    border-radius: 16px;
+}
+
+.small-card p,
+.small-cardd p {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.information h3 {
+    color: #fff;
+}
+
+.small-card h3,
+.small-card h3 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 136.52%;
+
+    color: #fff;
+}
+
+.small-card span {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.up {
+    background: #fff;
+    border-radius: 6px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    align-items: center;
+    padding: 5px;
+    color: #0d412ad3;
+}
+
+.headeer h3 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.6626px;
+    line-height: 28px;
+    color: #252626;
+}
+
+.fa-pencil {
+    color: #000;
+}
+
+.patient-card {
+    background: #FFFFFF;
+    box-shadow: 5.91564px 5.91564px 53.2408px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+}
+
+.search-box {
+    outline: none;
+    border-style: none;
+    background-color: #E5E5E5;
+    border: transparent;
+    border-radius: 6px;
+    width: 200px;
+    height: 35px;
+}
+
+#table {
+    width: 2000px;
+    margin: auto;
+    table-layout: fixed;
+    border: 2px solid #CED4DA;
+
+}
+
+#table thead tr th {
+    font-size: 30px;
+}
+
+#table thead tr th,
+#table tr td {
+    border-collapse: collapse;
+    border: 2px solid #CED4DA;
+    padding: 15px 10px;
+    color: #212529;
+    font-size: 18px;
+
+}
+
+#table tbody tr:nth-child(even) {
+    background-color: #36315E !important;
+}
+
+.pagination {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.pagination a {
+    color: #009CAA;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    font-family: TT Norms Pro;
+    background-color: #009CAA;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.pagination a:hover:not(.active) {
+    color: black;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.filter-btn {
+    background: #FDFDFD;
+    border: 0.591564px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3.94376px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11.8313px;
+    line-height: 10px;
+    outline: none;
+    padding: 10px 20px;
+    color: #6B6C6F;
+}
+
+.graph-card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    height: 530px;
+}
+
+.tag-red::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #F2A892;
+}
+
+.tag-red {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #252626;
+}
+
+.tag-green::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #009CAA;
+}
+
+.tag-green {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #252626;
+}
+
+.tag-light::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #66CB9F;
+}
+
+.tag-light {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #252626;
+}
+
+.tag-orange::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #F4B7B2;
+}
+
+.tag-orange {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #252626;
+}
+
+.tag-or::before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #EC7064;
+}
+
+.tag-or {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #252626;
+}
+
+.tag-body {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6B6C6F;
+}
+
+.hos {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.hospital p {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    margin-top: 0.8rem;
+    color: #6B6C6F;
+}
+
+.hospital .pan {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    background: #DEFFEE;
+    border-radius: 6px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 6px 12px;
+    color: #66CB9F;
+}
+
+.orange-2-btn,
+.orange-2-btn:focus {
+    height: 48px;
+    background: #F4B7B2;
+    border-radius: 15px;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none !important;
+    border: none;
+}
+
+.demo-card {
+    background: #DBF7F0;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.demo-card h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #1ABC9C;
+
+}
+
+.demo-body {
+    background: #F7FAFC;
+    height: 50px;
+    box-shadow: inset 0px 0.5px 0.5px rgba(158, 160, 165, 0.33);
+}
+
+.demo-body h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #1ABC9C;
+}
+
+.demo-body h5 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #6B6C6F;
+}
+
+.demo-card h2 {
+    cursor: pointer;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+
+    color: #252626;
+}
+
+.diaog-card {
+    background: #DFEAFF;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.diaog-card h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #3C609D;
+
+
+}
+
+.diaog-body {
+    background: #F7FAFC;
+    height: 50px;
+    box-shadow: inset 0px 0.5px 0.5px rgba(158, 160, 165, 0.33);
+}
+
+.diaog-body h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #3C609D;
+
+}
+
+.diaog-body h5 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #6B6C6F;
+}
+
+.diaog-card h2 {
+    cursor: pointer;
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+
+    color: #252626;
+}
+
+.drug-card {
+    background: #FFD0CD;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.drug-card h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #F96F5D;
+
+
+}
+
+.drug-body {
+    background: #F7FAFC;
+    height: 50px;
+    box-shadow: inset 0px 0.5px 0.5px rgba(158, 160, 165, 0.33);
+}
+
+.drug-body h6 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: right;
+    color: #F96F5D;
+
+}
+
+.drug-body h5 {
+    font-family: TT Norms Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #6B6C6F;
+}
+
+.right-link {
+    text-decoration: none;
+    color: #36315E;
+    font-weight: 500;
+}
+
+.right-link.active {
+    text-decoration: none;
+    color: #7e74c4;
+    font-weight: 500;
+}
+
+.right-side-menu {
+    list-style-type: none;
+}
+
+.user-btn {
+    background-color: #36315E;
+    color: #fff;
+    font-weight: 500;
+}
+
+.update-btn {
+    background-color: #8781b6;
+    color: #fff;
+    font-weight: 500;
+}
+
+.update-btn,
+.user-btn:hover {
+    color: #fff;
+    font-weight: 500;
+}

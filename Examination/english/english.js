@@ -23,7 +23,7 @@ continueBtn.onclick = ()=>{
     quizBox.classList.add("activeQuiz");
     showQuestions(0);
     queCounter(1);
-    startTimer(15)
+    startTimer(60)
     startTimerLine(0)
     
 };
@@ -33,7 +33,7 @@ continueBtn.onclick = ()=>{
     let queNumb=1
     let counter;
     let counterLine;
-    let timeValue = 15;
+    let timeValue = 60;
     let widthValue = 0;
     let userScore = 0; 
 
@@ -48,7 +48,7 @@ continueBtn.onclick = ()=>{
         quizBox.classList.add('activeQuiz');
     let queCount = 0;
     let queNumb=1
-    let timeValue = 15;
+    let timeValue = 60;
     let widthValue = 0;
     let userScore = 0; 
      showQuestions(queCount);

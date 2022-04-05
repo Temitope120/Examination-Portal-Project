@@ -4,45 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <title>Lecturer Login</title>
     <link rel="stylesheet" href="lecturerlogin.css" />
   </head>
+
   <body>
     <header class="header">
       <nav class="navigation">
         <div class="logo"></div>
         <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Student login</a></li>
-          <li><a href="#">Lecturer Login</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/courses/courses.html">Courses</a></li>
+          <li><a href="../studentlogin.html">Write Exam</a></li>
+          <li><a href="./lecturerlogin.html" class="active">Admin Login</a></li>
         </ul>
         <div class="toggle">&#9776;</div>
         <div class="toggle-menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Student login</a></li>
-            <li><a href="#">Lecturer Login</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../pages/courses/courses.html">Courses</a></li>
+            <li><a href="../studentlogin.html">Write Exam</a></li>
+            <li><a href="./lecturerlogin.html">Admin Login</a></li>
           </ul>
         </div>
       </nav>
-
       <div class="image-form">
         <div class="form-area">
           <div class="form-head">
             <h2>Input your Details</h2>
           </div>
-          <form action="" class="form">
+          <form
+            action="../pages/dashboard/dashboard.html"
+            class="form"
+            target="_blank"
+            id="form"
+          >
+            <div id="error" class="text-center"></div>
             <div class="input">
-              <label>Staff</label>
+              <label>Staff ID</label>
               <input
-                type="text"
+                type="number"
                 name="Matric-num"
-                id="staff-num"
+                id="staffId"
                 placeholder="Staff number"
                 autofocus
-                required
               />
             </div>
             <div class="input">
@@ -53,17 +67,20 @@
                 id="password"
                 placeholder="password"
                 autofocus
-                required
               />
             </div>
-            <button>Login</button>
+            <button type="submit">Login</button>
           </form>
         </div>
         <div class="girl-reading">
-          <img src="/images/Lecturer/professor-g42e591712_1280.jpg" alt="" />
+          <img
+            src="/Examination-Portal-Project/images/Lecturer/professor-g42e591712_1280.jpg"
+            alt=""
+          />
         </div>
       </div>
     </header>
+
     <script src="lecturerlogin.js"></script>
   </body>
 </html>
