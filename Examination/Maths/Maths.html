@@ -12,62 +12,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="Exam.css" />
+    <link
+      rel="stylesheet"
+      href="/Examination-Portal-Project/Examination/Exam.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Examination-Portal-Project/Examination/Exam.css"
+    />
   </head>
   <body>
     <!-- start button -->
-    <div class="start-btn"><button>Start Exam</button></div>
+    <div class="start-btn"><button>Start Quiz</button></div>
     <!-- infoBox -->
     <div class="info-box">
       <div class="info-title">
-        <h3>Some Rules For This Quiz</h3>
+        <span>Some Rules For This Quiz</span>
       </div>
       <div class="info-list">
         <div class="info">
-          1. This Section contains <span>30 questions.</span>
+          1. you will have only <span>15 seconds</span> per question
         </div>
+        <div class="info">2. once you select you answer, you cant reselect</div>
         <div class="info">
-          2. You will have only <span>1 minute</span> per question
+          3. you can't select any option once the time goes off
         </div>
-        <div class="info">2. Once you select you answer, you cant reselect</div>
+        <div class="info">4. you can't exot from the quoz once you start</div>
         <div class="info">
-          3. You can't select any option once the time goes off
-        </div>
-        <div class="info">4. You can't exit from the quiz once you start</div>
-        <div class="info">
-          5. You'll get points on the basis of your correct answers.
+          5. you'll get points on the basis of your correct answers.
         </div>
       </div>
       <div class="buttons">
-        <button id="quit">Exit</button>
+        <button id="quit">Exit Quiz</button>
         <button id="restart">Continue</button>
-      </div>
-    </div>
-    <!-- selecting courses -->
-    <div class="courses">
-      <div class="header info">Please select a course</div>
-      <div class="Subject">
-        <a href="../Examination/Maths/Maths.html">Math</a>
-      </div>
-      <div class="Subject info">
-        <a href="../Examination/english/english.html">English</a>
-      </div>
-      <div class="Subject info">
-        <a href="../Examination/Biology/biology.html">Biology</a>
-      </div>
-      <div class="Subject info">
-        <a href="../Examination/Chemistry/chemistry.html">Chemistry</a>
-      </div>
-      <div class="buttons">
-        <button id="exit">Exit Quiz</button>
-        <button id="proceed">Continue</button>
       </div>
     </div>
 
     <!-- quiz-box -->
     <div class="quix-box">
       <header>
-        <div class="title">Everything about FrontEnd development</div>
+        <div class="title">Use of English</div>
         <div class="timer">
           <div class="time-text">Time Left</div>
           <div class="timer-sec">15</div>
@@ -111,25 +95,23 @@
     <!-- result box -->
     <div class="result-box">
       <div class="icon">
-        <img src="../images/clap-icon.png" alt="">
+        <i class="fas fa-crown"></i>
       </div>
-      <div class="complete-text">You've Completed the Exam!</div>
+      <div class="complete-text">You've Completed the Quiz!</div>
       <div class="score-text">
-        <p>You got only
-          <p>2 Points</p>
+        <span
+          >and sorry, you got only
+          <p>2</p>
           out of
-          <p>5</p>
-        </p
+          <p>5</p></span
         >
       </div>
       <div class="buttons">
-        <button class="restart">Restart Exam</button>
-        <button class="Quit">Exit Exam</button>
+        <button class="restart">Restart Quiz</button>
+        <button class="Quit">Exit Quiz</button>
       </div>
     </div>
-    <script src="/Examination-Portal-Project/Examination/Maths.js"></script>
-    <script src="/Examination-Portal-Project/Examination/Exam.js"></script>
-    <!-- <script src="./English.js"></script>
-    <script src="./englishExam.js"></script> -->
+    <script src="/Examination-Portal-Project/Examination/Maths/Mathsquestions.js"></script>
+    <script src="/Examination-Portal-Project/Examination/Maths/maths.js"></script>
   </body>
 </html>

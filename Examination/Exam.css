@@ -11,7 +11,8 @@ body {
 .start-btn,
 .info-box,
 .quix-box,
-.result-box {
+.result-box,
+.courses {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,6 +20,9 @@ body {
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
     0px 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.3s ease;
+}
+.info-box{
+  /* width: 60%; */
 }
 .start-btn button {
   font-size: 1.5rem;
@@ -45,11 +49,38 @@ body {
 }
 .info-box.activeInfo,
 .quix-box.activeQuiz,
-.result-box.activeResult {
+.result-box.activeResult, 
+.courses.activeCourse {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50% -50%) scale(0.9);
+}
+.courses .Subject a{
+text-decoration: none;
+color: #343a40;
+}
+.courses{
+width: 40%;
+background-color: #fff;
+border-radius: 5px;
+padding: 5%;
+opacity: 0;
+pointer-events: none;
+transform: translate(-50% -50%) scale(0.9);
+text-align: center;
+
+}
+.courses .buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+#exit{
+  margin-right: 10px;
+}
+.courses .header{
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .info-box .info-title {
   height: 60px;
@@ -91,17 +122,26 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-#restart {
+#restart, #proceed {
   background-color: #007bff;
   color: #fff;
   border: 1px solid #007bff;
 }
 
-#restart:hover {
+#restart:hover, #proceed:hover{
   background-color: lightgray;
   color: #007bff;
+  
 }
-#quit:hover {
+#proceed{
+  padding: 10px;
+  border-radius: 5px;
+}
+#exit{
+  padding: 10px;
+  border-radius: 5px;
+}
+#quit:hover, #exit:hover {
   background-color: #007bff;
   color: #fff;
 }
@@ -164,7 +204,7 @@ body {
   bottom: 0px;
   left: 0px;
   height: 1px;
-  width: 50%;
+  width: 100%;
   background-color: rgb(255, 0, 0);
 }
 .quix-box section {
@@ -362,4 +402,43 @@ footer .next-btn:hover {
   border: none;
   padding: 0 20px;
   cursor: pointer;
+}
+@media (max-width: 768px){
+  .quix-box{
+    width: 75%;
+  }
+  .quix-box header .title {
+    font-size: 1.2rem;
+  }
+  .quix-box header .timer{
+    width: 27%;
+  }
+  .quix-box header .time-line{
+    display: none;
+  }
+}
+@media(max-width:425px){
+  .quix-box{
+    height: 90vh;
+  }
+  .quix-box header .title{
+    font-size: 1rem;
+  }
+  .quix-box header .timer .time-text{
+    font-size: .8rem;
+    
+  }
+}
+@media(max-width:375px){
+  .quix-box {
+    height: 100vh;
+    width: 90vw;
+  }
+  .info-box{
+    width: 90vw;
+  }
+  
+}
+@media(max-width:320px){
+
 }

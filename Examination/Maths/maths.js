@@ -1,66 +1,29 @@
 // getting all required button
 const startBtn = document.querySelector('.start-btn button');
 const infoBox = document.querySelector('.info-box')
-const exitBtn = document.querySelector('#quit')
-const back = document.querySelector('#exit')
-console.log(back)
-const proceedbtn = document.querySelector('#proceed')
-console.log(proceedbtn)
-const continueBtn = document.querySelector('#restart')
+const exitBtn = document.querySelector('.buttons #quit')
+const continueBtn = document.querySelector('.buttons #restart')
 const quizBox = document.querySelector('.quix-box')
-const courses = document.querySelector(".courses")
 const optionList = document.querySelector(".option-list")
 const timeCount = quizBox.querySelector(".timer .timer-sec")
 const timeLine = quizBox.querySelector("header .time-line")
 const timeOff = quizBox.querySelector("header .time-text")
 
-
-// // if startQuiz button clicked
-// start_btn.onclick = ()=>{
-//     info_box.classList.add("activeInfo"); //show info box
-// }
-// // if exitQuiz button clicked
-// exit_btn.onclick = ()=>{
-//     info_box.classList.remove("activeInfo"); //hide info box
-// }
-// // if continueQuiz button clicked
-// continue_btn.onclick = ()=>{
-//     info_box.classList.remove("activeInfo"); //hide info box
-//     quiz_box.classList.add("activeQuiz"); //show quiz box
-//     showQuetions(0); //calling showQestions function
-//     queCounter(1); //passing 1 parameter to queCounter
-//     startTimer(15); //calling startTimer function
-//     startTimerLine(0); //calling startTimerLine function
-// }
 // if start btn
 startBtn.onclick = ()=>{
-    courses.classList.add("activeCourse")};//show the info button
+    infoBox.classList.add("activeInfo")};//show the info button
 
-    
 // if Exit btn
-back.onclick = ()=>{
-    courses.classList.remove("activeCourse")};//hide  info box
+exitBtn.onclick = ()=>{
+    infoBox.classList.remove("activeInfo")};//hide  info box
 
-    
-    // if continue
-proceedbtn.onclick = () =>{
-    courses.classList.remove('activeCourse')
-    infoBox.classList.add("activeInfo")};
-// if continue btn
-back.addEventListener("click", () =>{
-    infoBox.classList.remove("activeInfo")
-});
-exitBtn.onclick = () =>{
-    infoBox.classList.remove("activeInfo")
-}
-
+// if Exit btn
 continueBtn.onclick = ()=>{
-    infoBox.classList.remove("activeInfo"); //hide info box
-    quizBox.classList.add("activeQuiz"); //show quiz box
-
+    infoBox.classList.add("activeInfo") ;//hide  info box
+    quizBox.classList.add("activeQuiz");
     showQuestions(0);
     queCounter(1);
-    startTimer(15)
+    startTimer(60)
     startTimerLine(0)
     
 };
@@ -70,7 +33,7 @@ continueBtn.onclick = ()=>{
     let queNumb=1
     let counter;
     let counterLine;
-    let timeValue = 15;
+    let timeValue = 60;
     let widthValue = 0;
     let userScore = 0; 
 
@@ -85,7 +48,7 @@ continueBtn.onclick = ()=>{
         quizBox.classList.add('activeQuiz');
     let queCount = 0;
     let queNumb=1
-    let timeValue = 15;
+    let timeValue = 60;
     let widthValue = 0;
     let userScore = 0; 
      showQuestions(queCount);
@@ -150,7 +113,7 @@ continueBtn.onclick = ()=>{
         const queText = document.querySelector(".que-text");
         
        
-        let queTag ='<span>'+ Maths[index].numb + '.' + Maths[index].question +'</span>'
+        let queTag ='<span>'+Maths[index].numb + '.' + Maths[index].question +'</span>'
          let optionTag = '<div class="option">'+Maths[index].options[0] +'<span></span></div>'
                         +'<div class="option">'+Maths[index].options[1] +'<span></span></div>'
                         +'<div class="option">'+Maths[index].options[2] +'<span></span></div>'
@@ -226,7 +189,7 @@ function showResultBox(){
     resultBox.classList.add("activeResult") //show the result box
     const scoreText = resultBox.querySelector(".score-text")
     if(userScore > 3){
-        let scoreTag = `<span>Congratulations!!,You got <p>${userScore} Points </p>out of<p>${Maths.length}</p></span>`
+        let scoreTag = `<span>Congratulations!!, You got <p>${userScore} Points </p>out of<p>${Maths.length}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
    else if(userScore > 3){
@@ -234,7 +197,7 @@ function showResultBox(){
         scoreText.innerHTML = scoreTag;
     }
     else{
-        let scoreTag = `<span>Unfortunately, you did not meet the pass mark. You got <p>${userScore}</p>out of<p>${Maths.length}</p></span>`
+        let scoreTag = `<span>Unfortunately, you did not meet the pass mark. You got <p>${userScore} points </p>out of<p>${Maths.length}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
 }
