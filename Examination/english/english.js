@@ -128,29 +128,29 @@ function optionSelected(answer){
     let correctAns = Maths[queCount].answer;
     let allOptions = optionList.children.length;
    
-    
+
+
     if (userAns === correctAns){
-        userScore += 1; 
-        console.log(userScore)
+         userScore += 5; 
+         console.log(userScore)
         answer.classList.add("correct");
         console.log('answer is correct');
         answer.insertAdjacentHTML("beforeend", tickIcon)
-        
+    
     }
     else{
-        answer.classList.add("incorrect");
+        answer.classList.add("correctt");
         console.log('answer is wrong');
-        answer.insertAdjacentHTML("beforeend", crossIcon)
+        answer.insertAdjacentHTML("beforeend", tickIcon)
     }
     
     // if answer is incorrect, automatically select the correct one
      for (let i = 0; i < allOptions; i++) {
          if(optionList.children[i].textContent === correctAns){
-             optionList.children[i].setAttribute('class', 'option correct')
-             optionList.children[i].insertAdjacentHTML("beforeend", tickIcon)
+             optionList.children[i].setAttribute('class', 'option correctt')
+            //  optionList.children[i].insertAdjacentHTML("beforeend", tickIcon)
             //  optionList.children[i].insertAdjacentHTML("beforeend", crossIcon)
          }
-        
      }
      // console.log(correctAns)
     // once user selected, all other options are disabled
@@ -169,20 +169,16 @@ function showResultBox(){
     quizBox.classList.remove("activeQuiz"); //hide the result box
     resultBox.classList.add("activeResult") //show the result box
     const scoreText = resultBox.querySelector(".score-text")
-    if(userScore > 3){
-        let scoreTag = `<span>Congratulations!!, You got <p>${userScore} Points </p>out of<p>${Maths.length}</p></span>`
+    if(userScore > 40 && userScore >= 50){
+        let scoreTag = `<span> Congratulations!!, You got <p>${userScore} % </p>out of<p>${Maths.length * 10}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
-   else if(userScore > 3){
-        let scoreTag = `<span>Nice, you got only<p>${userScore} Points </p>out of<p>${Maths.length}</p></span>`
+   else if(userScore <= 40){
+        let scoreTag = `<span>You did not meet the pass mark<p>${userScore} % </p>out of<p>${Maths.length * 10}</p></span>`
         scoreText.innerHTML = scoreTag;
     }
-    else{
-        let scoreTag = `<span>Unfortunately, you did not meet the pass mark. You got <p>${userScore} points </p>out of<p>${Maths.length}</p></span>`
-        scoreText.innerHTML = scoreTag;
-    }
-}
 
+}
 
 
 function startTimer(time) {
